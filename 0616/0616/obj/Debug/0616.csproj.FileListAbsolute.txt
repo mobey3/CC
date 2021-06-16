@@ -1,0 +1,12 @@
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\0616.exe.config
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\0616.exe
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\0616.pdb
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\SunnyUI.Common.dll
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\SunnyUI.dll
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csprojAssemblyReference.cache
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\_0616.Properties.Resources.resources
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csproj.CopyComplete
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.exe
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.pdb
