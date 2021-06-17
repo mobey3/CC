@@ -137,7 +137,7 @@ namespace carFixMgr0611.ui
                 return;
             }*/
 
-            Regex regex = new Regex(@"[가-힣]{3}");
+            Regex regex = new Regex(@"^[가-힣]{2,4}$");
             Match m = regex.Match(name);
             if (m.Success == false)
             {
