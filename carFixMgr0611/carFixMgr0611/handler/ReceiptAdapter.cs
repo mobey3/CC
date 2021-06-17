@@ -11,5 +11,17 @@ namespace carFixMgr0611.handler
     {
         private List<Receipt> receiptList =
             new List<Receipt>();
+
+
+        public void addReceipt(Receipt receipt)
+        {
+            receiptList.Add(receipt);
+        }
+
+        public void viewReceipt()
+        {
+            
+        }
+
     }
 }

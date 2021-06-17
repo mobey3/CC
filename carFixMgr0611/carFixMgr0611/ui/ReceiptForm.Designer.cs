@@ -113,20 +113,18 @@ namespace carFixMgr0611.ui
             // 
             // custTelH
             // 
+            this.custTelH.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custTelH.FillColor = System.Drawing.Color.White;
             this.custTelH.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custTelH.Items.AddRange(new object[] {
             "010",
-            "011",
-            "016",
-            "017",
-            "019"});
+            "011"});
             this.custTelH.Location = new System.Drawing.Point(200, 135);
             this.custTelH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custTelH.MinimumSize = new System.Drawing.Size(63, 0);
             this.custTelH.Name = "custTelH";
             this.custTelH.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.custTelH.Size = new System.Drawing.Size(63, 29);
+            this.custTelH.Size = new System.Drawing.Size(89, 29);
             this.custTelH.TabIndex = 7;
             this.custTelH.Text = "선택";
             this.custTelH.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,14 +134,14 @@ namespace carFixMgr0611.ui
             this.custTelB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.custTelB.FillColor = System.Drawing.Color.White;
             this.custTelB.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.custTelB.Location = new System.Drawing.Point(280, 135);
+            this.custTelB.Location = new System.Drawing.Point(297, 135);
             this.custTelB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custTelB.Maximum = 2147483647D;
             this.custTelB.Minimum = -2147483648D;
             this.custTelB.MinimumSize = new System.Drawing.Size(1, 1);
             this.custTelB.Name = "custTelB";
             this.custTelB.Padding = new System.Windows.Forms.Padding(5);
-            this.custTelB.Size = new System.Drawing.Size(149, 29);
+            this.custTelB.Size = new System.Drawing.Size(166, 29);
             this.custTelB.TabIndex = 8;
             this.custTelB.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -165,6 +163,7 @@ namespace carFixMgr0611.ui
             // 
             // custMonth
             // 
+            this.custMonth.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custMonth.FillColor = System.Drawing.Color.White;
             this.custMonth.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custMonth.Items.AddRange(new object[] {
@@ -180,18 +179,19 @@ namespace carFixMgr0611.ui
             "10",
             "11",
             "12"});
-            this.custMonth.Location = new System.Drawing.Point(280, 183);
+            this.custMonth.Location = new System.Drawing.Point(297, 183);
             this.custMonth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custMonth.MinimumSize = new System.Drawing.Size(63, 0);
             this.custMonth.Name = "custMonth";
             this.custMonth.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.custMonth.Size = new System.Drawing.Size(69, 29);
+            this.custMonth.Size = new System.Drawing.Size(78, 29);
             this.custMonth.TabIndex = 8;
             this.custMonth.Text = "월";
             this.custMonth.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // custDay
             // 
+            this.custDay.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custDay.FillColor = System.Drawing.Color.White;
             this.custDay.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custDay.Items.AddRange(new object[] {
@@ -226,18 +226,19 @@ namespace carFixMgr0611.ui
             "29",
             "30",
             "31"});
-            this.custDay.Location = new System.Drawing.Point(366, 183);
+            this.custDay.Location = new System.Drawing.Point(383, 183);
             this.custDay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.custDay.MinimumSize = new System.Drawing.Size(63, 0);
             this.custDay.Name = "custDay";
             this.custDay.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.custDay.Size = new System.Drawing.Size(63, 29);
+            this.custDay.Size = new System.Drawing.Size(80, 29);
             this.custDay.TabIndex = 8;
             this.custDay.Text = "일";
             this.custDay.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // custYear
             // 
+            this.custYear.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.custYear.FillColor = System.Drawing.Color.White;
             this.custYear.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.custYear.Items.AddRange(new object[] {
@@ -268,7 +269,7 @@ namespace carFixMgr0611.ui
             this.custYear.MinimumSize = new System.Drawing.Size(63, 0);
             this.custYear.Name = "custYear";
             this.custYear.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.custYear.Size = new System.Drawing.Size(63, 29);
+            this.custYear.Size = new System.Drawing.Size(89, 29);
             this.custYear.TabIndex = 8;
             this.custYear.Text = "년도";
             this.custYear.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -339,6 +340,7 @@ namespace carFixMgr0611.ui
             // 
             // carYear
             // 
+            this.carYear.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.carYear.FillColor = System.Drawing.Color.White;
             this.carYear.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.carYear.Items.AddRange(new object[] {
@@ -369,13 +371,14 @@ namespace carFixMgr0611.ui
             this.carYear.MinimumSize = new System.Drawing.Size(63, 0);
             this.carYear.Name = "carYear";
             this.carYear.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.carYear.Size = new System.Drawing.Size(63, 29);
+            this.carYear.Size = new System.Drawing.Size(89, 29);
             this.carYear.TabIndex = 14;
             this.carYear.Text = "선택";
             this.carYear.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // carCc
             // 
+            this.carCc.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.carCc.FillColor = System.Drawing.Color.White;
             this.carCc.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.carCc.Items.AddRange(new object[] {
@@ -390,7 +393,7 @@ namespace carFixMgr0611.ui
             this.carCc.MinimumSize = new System.Drawing.Size(63, 0);
             this.carCc.Name = "carCc";
             this.carCc.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.carCc.Size = new System.Drawing.Size(63, 29);
+            this.carCc.Size = new System.Drawing.Size(89, 29);
             this.carCc.TabIndex = 15;
             this.carCc.Text = "선택";
             this.carCc.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -439,7 +442,7 @@ namespace carFixMgr0611.ui
             this.carModel.MinimumSize = new System.Drawing.Size(63, 0);
             this.carModel.Name = "carModel";
             this.carModel.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.carModel.Size = new System.Drawing.Size(63, 29);
+            this.carModel.Size = new System.Drawing.Size(89, 29);
             this.carModel.TabIndex = 16;
             this.carModel.Text = "선택";
             this.carModel.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -642,7 +645,6 @@ namespace carFixMgr0611.ui
             this.receiptClose.Symbol = 61453;
             this.receiptClose.TabIndex = 30;
             this.receiptClose.Text = "닫 기";
-            this.receiptClose.Click += new System.EventHandler(this.receiptClose_Click);
             // 
             // uiLine1
             // 
@@ -668,6 +670,7 @@ namespace carFixMgr0611.ui
             // 
             // staffName
             // 
+            this.staffName.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.staffName.FillColor = System.Drawing.Color.White;
             this.staffName.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.staffName.Items.AddRange(new object[] {
@@ -680,7 +683,7 @@ namespace carFixMgr0611.ui
             this.staffName.MinimumSize = new System.Drawing.Size(63, 0);
             this.staffName.Name = "staffName";
             this.staffName.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.staffName.Size = new System.Drawing.Size(63, 29);
+            this.staffName.Size = new System.Drawing.Size(89, 29);
             this.staffName.TabIndex = 33;
             this.staffName.Text = "선택";
             this.staffName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -736,7 +739,6 @@ namespace carFixMgr0611.ui
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
-        private Sunny.UI.UIComboBox custTelH;
         private Sunny.UI.UITextBox custTelB;
         private Sunny.UI.UITextBox custName;
         private Sunny.UI.UIComboBox custMonth;
@@ -767,5 +769,6 @@ namespace carFixMgr0611.ui
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UILine uiLine2;
         private Sunny.UI.UIComboBox staffName;
+        private Sunny.UI.UIComboBox custTelH;
     }
 }

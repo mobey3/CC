@@ -38,6 +38,7 @@ namespace carFixMgr0611
             this.custFixAdd = new Sunny.UI.UISymbolButton();
             this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             this.custFixinfo = new Sunny.UI.UISymbolButton();
+            this.MainMin = new Sunny.UI.UISymbolButton();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,15 +94,16 @@ namespace carFixMgr0611
             // 
             this.mainExit.BackColor = System.Drawing.Color.Transparent;
             this.mainExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mainExit.FillColor = System.Drawing.Color.Red;
+            this.mainExit.FillColor = System.Drawing.Color.Transparent;
             this.mainExit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.mainExit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.mainExit.ForeColor = System.Drawing.Color.Yellow;
             this.mainExit.ForeHoverColor = System.Drawing.Color.HotPink;
             this.mainExit.IsCircle = true;
-            this.mainExit.Location = new System.Drawing.Point(700, 34);
+            this.mainExit.Location = new System.Drawing.Point(728, -1);
             this.mainExit.MinimumSize = new System.Drawing.Size(1, 1);
             this.mainExit.Name = "mainExit";
-            this.mainExit.Size = new System.Drawing.Size(92, 59);
+            this.mainExit.RectColor = System.Drawing.Color.Transparent;
+            this.mainExit.Size = new System.Drawing.Size(43, 59);
             this.mainExit.Style = Sunny.UI.UIStyle.Custom;
             this.mainExit.Symbol = 61453;
             this.mainExit.SymbolSize = 48;
@@ -157,6 +159,27 @@ namespace carFixMgr0611
             this.custFixinfo.Text = "앱 정보";
             this.custFixinfo.Click += new System.EventHandler(this.custFixInfo_Click);
             // 
+            // MainMin
+            // 
+            this.MainMin.BackColor = System.Drawing.Color.Transparent;
+            this.MainMin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MainMin.FillColor = System.Drawing.Color.Transparent;
+            this.MainMin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.MainMin.ForeColor = System.Drawing.Color.Yellow;
+            this.MainMin.ForeHoverColor = System.Drawing.Color.HotPink;
+            this.MainMin.IsCircle = true;
+            this.MainMin.Location = new System.Drawing.Point(667, 12);
+            this.MainMin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.MainMin.Name = "MainMin";
+            this.MainMin.RectColor = System.Drawing.Color.Transparent;
+            this.MainMin.Size = new System.Drawing.Size(55, 37);
+            this.MainMin.Style = Sunny.UI.UIStyle.Custom;
+            this.MainMin.Symbol = 61544;
+            this.MainMin.SymbolSize = 48;
+            this.MainMin.TabIndex = 10;
+            this.MainMin.TipsColor = System.Drawing.Color.Transparent;
+            this.MainMin.Click += new System.EventHandler(this.MainMin_Click);
+            // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -164,6 +187,7 @@ namespace carFixMgr0611
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(783, 565);
             this.ControlBox = false;
+            this.Controls.Add(this.MainMin);
             this.Controls.Add(this.custFixinfo);
             this.Controls.Add(this.uiSymbolLabel1);
             this.Controls.Add(this.custFixAdd);
@@ -190,6 +214,7 @@ namespace carFixMgr0611
         private Sunny.UI.UISymbolButton custFixAdd;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UISymbolButton custFixinfo;
+        private Sunny.UI.UISymbolButton MainMin;
     }
 }
 

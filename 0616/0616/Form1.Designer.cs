@@ -29,13 +29,34 @@ namespace _0616
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // cxFlatPictureBox1
+            // 
+            this.cxFlatPictureBox1.Location = new System.Drawing.Point(-3, 1);
+            this.cxFlatPictureBox1.Name = "cxFlatPictureBox1";
+            this.cxFlatPictureBox1.Size = new System.Drawing.Size(802, 193);
+            this.cxFlatPictureBox1.TabIndex = 0;
+            this.cxFlatPictureBox1.TabStop = false;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.cxFlatPictureBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private CxFlatUI.CxFlatPictureBox cxFlatPictureBox1;
     }
 }
 

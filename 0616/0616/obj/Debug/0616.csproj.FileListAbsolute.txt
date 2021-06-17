@@ -10,3 +10,5 @@ C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csproj.CoreCompileInputs.cache
 C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.csproj.CopyComplete
 C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.exe
 C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\0616.pdb
+C:\Users\KB\Desktop\CC\0616\0616\bin\Debug\CxFlatUI.dll
+C:\Users\KB\Desktop\CC\0616\0616\obj\Debug\_0616.Form1.resources
