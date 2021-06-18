@@ -1,4 +1,5 @@
-﻿using carFixMgr0611.model;
+﻿using carFixMgr0611.handler;
+using carFixMgr0611.model;
 using carFixMgr0611.util;
 using MaterialSkin.Controls;
 using Sunny.UI;
@@ -15,11 +16,18 @@ using System.Windows.Forms;
 
 namespace carFixMgr0611.ui
 {
-    public partial class ReceiptForm : MaterialForm
+    partial class ReceiptForm : MaterialForm
     {
+        ReceiptAdapter adapter;
         public ReceiptForm()
         {
             InitializeComponent();
+        }
+
+        public ReceiptForm(ReceiptAdapter adapter)
+        {
+            InitializeComponent();
+            this.adapter = adapter;
         }
 
         private void receiptSave_Click(object sender, EventArgs e)
@@ -85,7 +93,7 @@ namespace carFixMgr0611.ui
                 "담당자를 선택하세요"
             };
 
-            List<Receipt> ReList = new List<Receipt>();
+/*            List<Receipt> ReList = new List<Receipt>();
 
             for (int i = 0; i < arrData.Length; i++)
             {
@@ -93,11 +101,29 @@ namespace carFixMgr0611.ui
                     || arrData[i].Equals("선택"))
                 {
                     MessageBox.Show(arrMsg[i]);
-                    ActiveControl = arrObj[i] as Control;
+                    ActiveControl = arrObj[i] as Control; // 하이캐스팅
                     ActiveControl.Focus();
                     custName.Text = "";
                     return;
                 }
+            }*/
+
+            Dictionary<object, string> dicInput =
+                new Dictionary<object, string>();
+            for(int i = 0; i < arrData.Length; i++)
+            {
+                dicInput.Add(arrObj[i], arrData[i]);
+            }
+
+            int cnt = 0;
+            foreach(KeyValuePair<object,string> item in dicInput)
+            {
+                if(item.Value.Equals("") || item.Value.Equals("선택"))
+                {
+                    setFocus(item.Key as Control, arrMsg[cnt]);
+                    return;
+                }
+                cnt++;
             }
 
             UICheckBox[] checkBox = new UICheckBox[]
@@ -107,7 +133,7 @@ namespace carFixMgr0611.ui
             };
 
 
-
+            // ↓ 컬렉션 클래스 <제네릭 or 범용데이터> 
             List<RepairItem> itemList = new List< RepairItem > ();
             for (int i = RepairTable.ENGINE_OIL;
                 i < RepairTable.ETC_COST + 1; i++)
@@ -122,21 +148,14 @@ namespace carFixMgr0611.ui
                 }
             }
 
-            /* if (itemList.Count == 0)
-             {
-                 MessageBox.Show("수리항목을 체크하세요");
-                 return;
-             }*/
+            if (itemList.Count == 0)
+            {
+                MessageBox.Show("수리항목을 체크하세요");
+                return;
+            }
 
             // 한글 입력 체크 
-           /* string chkName = Regex.Replace(name, @"^[가-힣]{2,4}$", ""); // ^ 부정 한글이 아니면 공백으로 치환
-            Console.WriteLine("정규표현식: " + chkName);
-            if (chkName.Length != name.Length)
-            {
-                setFocus(custName, Properties.Resources.ERR_NAME_WRONG);
-                return;
-            }*/
-
+            // ↓ 정규 표현식
             Regex regex = new Regex(@"^[가-힣]{2,4}$");
             Match m = regex.Match(name);
             if (m.Success == false)
@@ -179,23 +198,25 @@ namespace carFixMgr0611.ui
                   }
               }*/
 
-            Console.WriteLine("고객명: " + name);
+            /*Console.WriteLine("고객명: " + name);
             Console.WriteLine("전화번호: " + (telH + telB));
             Console.WriteLine("생년월일: " + (custyear + custmonth + custday));
             Console.WriteLine("차량모델: " + model);
             Console.WriteLine("차량번호: " + number);
             Console.WriteLine("배기량: " + cc);
             Console.WriteLine("차량연식: " + year);
-            Console.WriteLine("담당자: " + staffname);
+            Console.WriteLine("담당자: " + staffname);*/
+
+            adapter.addReceipt(new Receipt(
+                new Customer(name,telH+telB, custyear+custmonth+custday),
+                new Car(model,number,cc,year),
+                DateTime.Now.ToString("yyyy년MM월dd일"),
+                staffname,itemList));
+
+           
 
             Close();
 
-           /* Receipt rec = new Receipt (new Customer(name, (telH + telB), (custyear + custmonth + custday)),
-                                                  (new Car(model, number, cc, year)),
-                                                  (new Staff(staffname)));*/
-
-
-          
         }
             private void setFocus(Control cont,string msg)
             {

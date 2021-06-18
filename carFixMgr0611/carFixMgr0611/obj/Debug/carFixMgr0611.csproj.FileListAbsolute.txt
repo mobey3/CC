@@ -29,4 +29,6 @@ C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.cspro
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.exe
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.pdb
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.ReceiptForm.resources
-C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.RepairHistory.resources
+C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.Form1.resources
+C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.HistoryForm.resources
+C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\Oracle.ManagedDataAccess.dll

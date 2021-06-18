@@ -24,6 +24,7 @@ namespace carFixMgr0611.ui
 
         private void uiDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*adapter.viewReceipt();*/
 
         }
     }
