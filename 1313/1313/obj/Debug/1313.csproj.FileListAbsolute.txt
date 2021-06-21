@@ -1,0 +1,15 @@
+C:\Users\KB\source\repos\1313\1313\bin\Debug\1313.exe.config
+C:\Users\KB\source\repos\1313\1313\bin\Debug\1313.exe
+C:\Users\KB\source\repos\1313\1313\bin\Debug\1313.pdb
+C:\Users\KB\source\repos\1313\1313\bin\Debug\CxFlatUI.dll
+C:\Users\KB\source\repos\1313\1313\bin\Debug\MaterialSkin.dll
+C:\Users\KB\source\repos\1313\1313\bin\Debug\SunnyUI.Common.dll
+C:\Users\KB\source\repos\1313\1313\bin\Debug\SunnyUI.dll
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.csprojAssemblyReference.cache
+C:\Users\KB\source\repos\1313\1313\obj\Debug\_1313.Form1.resources
+C:\Users\KB\source\repos\1313\1313\obj\Debug\_1313.Properties.Resources.resources
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.csproj.GenerateResource.cache
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.csproj.CoreCompileInputs.cache
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.csproj.CopyComplete
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.exe
+C:\Users\KB\source\repos\1313\1313\obj\Debug\1313.pdb

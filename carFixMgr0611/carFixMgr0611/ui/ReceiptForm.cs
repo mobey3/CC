@@ -110,6 +110,7 @@ namespace carFixMgr0611.ui
 
             Dictionary<object, string> dicInput =
                 new Dictionary<object, string>();
+
             for(int i = 0; i < arrData.Length; i++)
             {
                 dicInput.Add(arrObj[i], arrData[i]);
