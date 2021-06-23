@@ -16,13 +16,16 @@ namespace carFixMgr0611
 {
     public partial class MainForm1 : MaterialForm
     {
-        /*OraHandler ora = new OraHandler();*/
-        ReceiptAdapter adapter = new ReceiptAdapter();
+        OraHandler ora;
+        ReceiptAdapter adapter;
 
         public MainForm1()
         {
             InitializeComponent();
-            CommUtil.initTheme(this);     //메인폼을 쓰기위해 this          
+            CommUtil.initTheme(this);     //메인폼을 쓰기위해 this
+            ora = new OraHandler();
+            adapter = new ReceiptAdapter(ora);
+
         }
 
         private void mainExit_Click(object sender, EventArgs e)
@@ -32,7 +35,9 @@ namespace carFixMgr0611
 
         private void custFixAdd_Click(object sender, EventArgs e)
         {
-            new ReceiptForm(adapter).ShowDialog();
+            /*new ReceiptForm(adapter).ShowDialog();
+            adapter.addReceiptDb();*/
+            ora.insertDb();
         }
 
         private void custFixView_Click(object sender, EventArgs e)

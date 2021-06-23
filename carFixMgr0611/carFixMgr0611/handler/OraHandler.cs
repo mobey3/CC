@@ -1,4 +1,5 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿using carFixMgr0611.model;
+using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,6 +59,40 @@ namespace carFixMgr0611.handler
             {
                 Console.WriteLine("오라클 접속 해제 에러!");
             }
+        }
+
+        public void insertDb()
+        {
+            string model = "그랜저";
+            string cc = "2500cc이하";
+            string number = "23가 2345";
+            string caryear = "2020년식";
+
+            string query =
+                string.Format("insert into car_t values " +
+                "(CAR_T_SEQ.NEXTVAL,'{0}','{1}','{2}','{3}')",
+                model, number, cc, caryear);
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+
+        }
+
+        public void insertDb(Receipt receipt)
+        {
+            string query =
+                string.Format("insert all" +
+                "into car_t values (CAR_T_SEQ.NEXTVAL,'그랜저','13가1234','2500cc이하','2019년식')");
+            
+                query += string.Format("into CUSTOMER_T values " +
+                    "(CUSTOMER_T_SEQ.NEXTVAL,'홍길동', " +
+                    "'01023334333','19810520',CAR_T_SEQ.currval)");
+
+            query += "select * from dual";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+
         }
     }
 }

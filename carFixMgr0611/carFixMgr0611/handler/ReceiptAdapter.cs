@@ -11,11 +11,24 @@ namespace carFixMgr0611.handler
     {
         private List<Receipt> receiptList =
             new List<Receipt>();
+        private OraHandler ora;
 
+        public ReceiptAdapter(OraHandler ora)
+        {
+            this.ora = ora;
+        }
 
         public void addReceipt(Receipt receipt)
         {
             receiptList.Add(receipt);
+        }
+
+        public void addReceiptDb()
+        {
+            for(int i = 0; i < receiptList.Count; i++)
+            {
+                ora.insertDb();
+            }
         }
 
         public void viewReceipt()

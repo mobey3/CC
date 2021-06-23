@@ -20,7 +20,6 @@ C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\CxFlatUI.dll
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\MaterialSkin.dll
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\SunnyUI.Common.dll
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\SunnyUI.dll
-C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csprojAssemblyReference.cache
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.Properties.Resources.resources
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.MainForm1.resources
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.GenerateResource.cache
@@ -32,3 +31,4 @@ C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.Re
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.Form1.resources
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.HistoryForm.resources
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.AssemblyReference.cache

@@ -30,35 +30,37 @@ namespace _1313
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
-            this.cxFlatPictureBox2 = new CxFlatUI.CxFlatPictureBox();
-            this.Sty_Estimate = new Sunny.UI.UISymbolButton();
-            this.Wool_Estimate = new Sunny.UI.UISymbolButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
+            this.Sty_Estimate = new Sunny.UI.UISymbolButton();
+            this.Wool_Estimate = new Sunny.UI.UISymbolButton();
+            this.cxFlatPictureBox2 = new CxFlatUI.CxFlatPictureBox();
+            this.cxFlatPictureBox1 = new CxFlatUI.CxFlatPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // cxFlatPictureBox1
+            // uiLabel1
             // 
-            this.cxFlatPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox1.Image")));
-            this.cxFlatPictureBox1.Location = new System.Drawing.Point(-2, 144);
-            this.cxFlatPictureBox1.Name = "cxFlatPictureBox1";
-            this.cxFlatPictureBox1.Size = new System.Drawing.Size(570, 474);
-            this.cxFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cxFlatPictureBox1.TabIndex = 1;
-            this.cxFlatPictureBox1.TabStop = false;
+            this.uiLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.uiLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiLabel1.Location = new System.Drawing.Point(-2, 63);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(570, 81);
+            this.uiLabel1.TabIndex = 7;
+            this.uiLabel1.Text = "스티로폼";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cxFlatPictureBox2
+            // uiLabel2
             // 
-            this.cxFlatPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox2.Image")));
-            this.cxFlatPictureBox2.Location = new System.Drawing.Point(566, 144);
-            this.cxFlatPictureBox2.Name = "cxFlatPictureBox2";
-            this.cxFlatPictureBox2.Size = new System.Drawing.Size(563, 474);
-            this.cxFlatPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cxFlatPictureBox2.TabIndex = 2;
-            this.cxFlatPictureBox2.TabStop = false;
+            this.uiLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.uiLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiLabel2.Location = new System.Drawing.Point(566, 63);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(566, 81);
+            this.uiLabel2.TabIndex = 8;
+            this.uiLabel2.Text = "그라스울";
+            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Sty_Estimate
             // 
@@ -86,27 +88,25 @@ namespace _1313
             this.Wool_Estimate.Text = "견적뽑기";
             this.Wool_Estimate.Click += new System.EventHandler(this.Wool_Estimate_Click);
             // 
-            // uiLabel1
+            // cxFlatPictureBox2
             // 
-            this.uiLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.uiLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel1.Location = new System.Drawing.Point(-2, 63);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(570, 81);
-            this.uiLabel1.TabIndex = 7;
-            this.uiLabel1.Text = "스티로폼";
-            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cxFlatPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox2.Image")));
+            this.cxFlatPictureBox2.Location = new System.Drawing.Point(566, 144);
+            this.cxFlatPictureBox2.Name = "cxFlatPictureBox2";
+            this.cxFlatPictureBox2.Size = new System.Drawing.Size(563, 474);
+            this.cxFlatPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cxFlatPictureBox2.TabIndex = 2;
+            this.cxFlatPictureBox2.TabStop = false;
             // 
-            // uiLabel2
+            // cxFlatPictureBox1
             // 
-            this.uiLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.uiLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uiLabel2.Location = new System.Drawing.Point(566, 63);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(566, 81);
-            this.uiLabel2.TabIndex = 8;
-            this.uiLabel2.Text = "그라스울";
-            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cxFlatPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("cxFlatPictureBox1.Image")));
+            this.cxFlatPictureBox1.Location = new System.Drawing.Point(-2, 144);
+            this.cxFlatPictureBox1.Name = "cxFlatPictureBox1";
+            this.cxFlatPictureBox1.Size = new System.Drawing.Size(570, 474);
+            this.cxFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cxFlatPictureBox1.TabIndex = 1;
+            this.cxFlatPictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -121,20 +121,20 @@ namespace _1313
             this.Controls.Add(this.cxFlatPictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CxFlatUI.CxFlatPictureBox cxFlatPictureBox1;
-        private CxFlatUI.CxFlatPictureBox cxFlatPictureBox2;
-        private Sunny.UI.UISymbolButton Sty_Estimate;
-        private Sunny.UI.UISymbolButton Wool_Estimate;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UISymbolButton Sty_Estimate;
+        private Sunny.UI.UISymbolButton Wool_Estimate;
+        private CxFlatUI.CxFlatPictureBox cxFlatPictureBox2;
+        private CxFlatUI.CxFlatPictureBox cxFlatPictureBox1;
     }
 }
 

@@ -49,25 +49,30 @@ namespace _1313.ui
             this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
+            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
+            this.uiSymbolButton3 = new Sunny.UI.UISymbolButton();
             this.SuspendLayout();
             // 
             // uiCheckBox23
             // 
+            this.uiCheckBox23.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox23.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox23.Location = new System.Drawing.Point(489, 250);
+            this.uiCheckBox23.Location = new System.Drawing.Point(345, 333);
             this.uiCheckBox23.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox23.Name = "uiCheckBox23";
             this.uiCheckBox23.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.uiCheckBox23.Size = new System.Drawing.Size(115, 36);
+            this.uiCheckBox23.Size = new System.Drawing.Size(75, 36);
             this.uiCheckBox23.TabIndex = 44;
             this.uiCheckBox23.Text = "uiCheckBox23";
             // 
             // uiCheckBox22
             // 
+            this.uiCheckBox22.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox22.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox22.Location = new System.Drawing.Point(120, 452);
+            this.uiCheckBox22.Location = new System.Drawing.Point(941, 261);
             this.uiCheckBox22.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox22.Name = "uiCheckBox22";
             this.uiCheckBox22.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -77,9 +82,10 @@ namespace _1313.ui
             // 
             // uiCheckBox19
             // 
+            this.uiCheckBox19.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox19.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox19.Location = new System.Drawing.Point(178, 397);
+            this.uiCheckBox19.Location = new System.Drawing.Point(854, 261);
             this.uiCheckBox19.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox19.Name = "uiCheckBox19";
             this.uiCheckBox19.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -89,9 +95,10 @@ namespace _1313.ui
             // 
             // uiCheckBox18
             // 
+            this.uiCheckBox18.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox18.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox18.Location = new System.Drawing.Point(68, 397);
+            this.uiCheckBox18.Location = new System.Drawing.Point(757, 261);
             this.uiCheckBox18.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox18.Name = "uiCheckBox18";
             this.uiCheckBox18.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -101,33 +108,36 @@ namespace _1313.ui
             // 
             // uiCheckBox17
             // 
+            this.uiCheckBox17.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox17.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox17.Location = new System.Drawing.Point(489, 319);
+            this.uiCheckBox17.Location = new System.Drawing.Point(604, 333);
             this.uiCheckBox17.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox17.Name = "uiCheckBox17";
             this.uiCheckBox17.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.uiCheckBox17.Size = new System.Drawing.Size(115, 36);
+            this.uiCheckBox17.Size = new System.Drawing.Size(71, 36);
             this.uiCheckBox17.TabIndex = 40;
             this.uiCheckBox17.Text = "uiCheckBox17";
             // 
             // uiCheckBox16
             // 
+            this.uiCheckBox16.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox16.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox16.Location = new System.Drawing.Point(318, 319);
+            this.uiCheckBox16.Location = new System.Drawing.Point(476, 333);
             this.uiCheckBox16.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox16.Name = "uiCheckBox16";
             this.uiCheckBox16.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.uiCheckBox16.Size = new System.Drawing.Size(115, 36);
+            this.uiCheckBox16.Size = new System.Drawing.Size(77, 36);
             this.uiCheckBox16.TabIndex = 39;
             this.uiCheckBox16.Text = "uiCheckBox16";
             // 
             // uiCheckBox15
             // 
+            this.uiCheckBox15.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox15.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox15.Location = new System.Drawing.Point(489, 178);
+            this.uiCheckBox15.Location = new System.Drawing.Point(832, 333);
             this.uiCheckBox15.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox15.Name = "uiCheckBox15";
             this.uiCheckBox15.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -137,32 +147,35 @@ namespace _1313.ui
             // 
             // uiCheckBox14
             // 
+            this.uiCheckBox14.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox14.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox14.Location = new System.Drawing.Point(318, 250);
+            this.uiCheckBox14.Location = new System.Drawing.Point(233, 333);
             this.uiCheckBox14.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox14.Name = "uiCheckBox14";
             this.uiCheckBox14.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.uiCheckBox14.Size = new System.Drawing.Size(115, 36);
+            this.uiCheckBox14.Size = new System.Drawing.Size(67, 36);
             this.uiCheckBox14.TabIndex = 37;
             this.uiCheckBox14.Text = "uiCheckBox14";
             // 
             // uiCheckBox13
             // 
+            this.uiCheckBox13.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox13.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox13.Location = new System.Drawing.Point(318, 178);
+            this.uiCheckBox13.Location = new System.Drawing.Point(720, 333);
             this.uiCheckBox13.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox13.Name = "uiCheckBox13";
             this.uiCheckBox13.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.uiCheckBox13.Size = new System.Drawing.Size(115, 36);
+            this.uiCheckBox13.Size = new System.Drawing.Size(70, 36);
             this.uiCheckBox13.TabIndex = 36;
             // 
             // uiCheckBox12
             // 
+            this.uiCheckBox12.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox12.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox12.Location = new System.Drawing.Point(178, 319);
+            this.uiCheckBox12.Location = new System.Drawing.Point(670, 261);
             this.uiCheckBox12.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox12.Name = "uiCheckBox12";
             this.uiCheckBox12.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -172,9 +185,10 @@ namespace _1313.ui
             // 
             // uiCheckBox11
             // 
+            this.uiCheckBox11.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox11.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox11.Location = new System.Drawing.Point(68, 319);
+            this.uiCheckBox11.Location = new System.Drawing.Point(581, 261);
             this.uiCheckBox11.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox11.Name = "uiCheckBox11";
             this.uiCheckBox11.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -184,9 +198,10 @@ namespace _1313.ui
             // 
             // uiCheckBox10
             // 
+            this.uiCheckBox10.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox10.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox10.Location = new System.Drawing.Point(178, 250);
+            this.uiCheckBox10.Location = new System.Drawing.Point(498, 261);
             this.uiCheckBox10.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox10.Name = "uiCheckBox10";
             this.uiCheckBox10.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -196,9 +211,10 @@ namespace _1313.ui
             // 
             // uiCheckBox9
             // 
+            this.uiCheckBox9.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox9.Location = new System.Drawing.Point(68, 250);
+            this.uiCheckBox9.Location = new System.Drawing.Point(410, 261);
             this.uiCheckBox9.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox9.Name = "uiCheckBox9";
             this.uiCheckBox9.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -208,9 +224,10 @@ namespace _1313.ui
             // 
             // uiCheckBox8
             // 
+            this.uiCheckBox8.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox8.Location = new System.Drawing.Point(178, 178);
+            this.uiCheckBox8.Location = new System.Drawing.Point(326, 261);
             this.uiCheckBox8.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox8.Name = "uiCheckBox8";
             this.uiCheckBox8.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -220,9 +237,10 @@ namespace _1313.ui
             // 
             // uiCheckBox7
             // 
+            this.uiCheckBox7.BackColor = System.Drawing.Color.Transparent;
             this.uiCheckBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiCheckBox7.Location = new System.Drawing.Point(68, 178);
+            this.uiCheckBox7.Location = new System.Drawing.Point(233, 261);
             this.uiCheckBox7.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox7.Name = "uiCheckBox7";
             this.uiCheckBox7.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -232,34 +250,37 @@ namespace _1313.ui
             // 
             // uiSymbolLabel4
             // 
+            this.uiSymbolLabel4.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel4.Location = new System.Drawing.Point(678, 93);
+            this.uiSymbolLabel4.Location = new System.Drawing.Point(23, 406);
             this.uiSymbolLabel4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel4.Name = "uiSymbolLabel4";
             this.uiSymbolLabel4.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel4.Size = new System.Drawing.Size(173, 59);
+            this.uiSymbolLabel4.Size = new System.Drawing.Size(173, 36);
             this.uiSymbolLabel4.TabIndex = 29;
             this.uiSymbolLabel4.Text = "길이";
             // 
             // uiSymbolLabel3
             // 
+            this.uiSymbolLabel3.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel3.Location = new System.Drawing.Point(68, 93);
+            this.uiSymbolLabel3.Location = new System.Drawing.Point(23, 261);
             this.uiSymbolLabel3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel3.Name = "uiSymbolLabel3";
             this.uiSymbolLabel3.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel3.Size = new System.Drawing.Size(173, 59);
+            this.uiSymbolLabel3.Size = new System.Drawing.Size(173, 36);
             this.uiSymbolLabel3.TabIndex = 28;
             this.uiSymbolLabel3.Text = "두께";
             // 
             // uiSymbolLabel2
             // 
+            this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel2.Location = new System.Drawing.Point(378, 93);
+            this.uiSymbolLabel2.Location = new System.Drawing.Point(23, 333);
             this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel2.Name = "uiSymbolLabel2";
             this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel2.Size = new System.Drawing.Size(173, 59);
+            this.uiSymbolLabel2.Size = new System.Drawing.Size(173, 36);
             this.uiSymbolLabel2.TabIndex = 27;
             this.uiSymbolLabel2.Text = "색상";
             // 
@@ -268,7 +289,7 @@ namespace _1313.ui
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox1.FillColor = System.Drawing.Color.White;
             this.uiTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiTextBox1.Location = new System.Drawing.Point(694, 178);
+            this.uiTextBox1.Location = new System.Drawing.Point(246, 406);
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.Maximum = 2147483647D;
             this.uiTextBox1.Minimum = -2147483648D;
@@ -285,11 +306,47 @@ namespace _1313.ui
             this.uiContextMenuStrip1.Name = "uiContextMenuStrip1";
             this.uiContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // uiSymbolButton1
+            // 
+            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(135, 502);
+            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton1.Name = "uiSymbolButton1";
+            this.uiSymbolButton1.Size = new System.Drawing.Size(223, 51);
+            this.uiSymbolButton1.TabIndex = 46;
+            this.uiSymbolButton1.Text = "uiSymbolButton1";
+            // 
+            // uiSymbolButton2
+            // 
+            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(452, 502);
+            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton2.Name = "uiSymbolButton2";
+            this.uiSymbolButton2.Size = new System.Drawing.Size(223, 51);
+            this.uiSymbolButton2.TabIndex = 48;
+            this.uiSymbolButton2.Text = "uiSymbolButton2";
+            // 
+            // uiSymbolButton3
+            // 
+            this.uiSymbolButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton3.Location = new System.Drawing.Point(757, 502);
+            this.uiSymbolButton3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton3.Name = "uiSymbolButton3";
+            this.uiSymbolButton3.Size = new System.Drawing.Size(223, 51);
+            this.uiSymbolButton3.TabIndex = 49;
+            this.uiSymbolButton3.Text = "uiSymbolButton3";
+            // 
             // WallForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 653);
+            this.Controls.Add(this.uiSymbolButton3);
+            this.Controls.Add(this.uiSymbolButton2);
+            this.Controls.Add(this.uiSymbolButton1);
             this.Controls.Add(this.uiTextBox1);
             this.Controls.Add(this.uiCheckBox23);
             this.Controls.Add(this.uiCheckBox22);
@@ -337,5 +394,8 @@ namespace _1313.ui
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIContextMenuStrip uiContextMenuStrip1;
+        private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private Sunny.UI.UISymbolButton uiSymbolButton2;
+        private Sunny.UI.UISymbolButton uiSymbolButton3;
     }
 }
