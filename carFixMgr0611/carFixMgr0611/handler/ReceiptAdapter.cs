@@ -25,10 +25,24 @@ namespace carFixMgr0611.handler
 
         public void addReceiptDb()
         {
-            for(int i = 0; i < receiptList.Count; i++)
+            for (int i = 0; i < receiptList.Count; i++)
             {
-                ora.insertDb();
+                ora.insertDb(receiptList[i]);
             }
+            receiptList.Clear();
+        }
+
+        public List<ReceiptVO> getReceiptDb()
+        {
+            List<ReceiptVO> list = ora.getReceipt();
+            return list;
+        }
+
+        public List<RepairItem> GetRepairItemsDb(string name)
+        {
+            List<RepairItem> list = ora.getRepairItem(name);
+            return list;
+            /*return ora.getRepairItem();*/
         }
 
         public void viewReceipt()
@@ -61,6 +75,10 @@ namespace carFixMgr0611.handler
                 // 총 결제금액 처리
 
             }
+        }
+        public void viewReceiptDb()
+        {
+            ora.showDb();
         }
 
     }

@@ -645,6 +645,7 @@ namespace carFixMgr0611.ui
             this.receiptClose.Symbol = 61453;
             this.receiptClose.TabIndex = 30;
             this.receiptClose.Text = "닫 기";
+            this.receiptClose.Click += new System.EventHandler(this.receiptClose_Click_1);
             // 
             // uiLine1
             // 

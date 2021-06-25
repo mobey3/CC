@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1313.RepairTable
 {
-    class WallPrice
+    class StyrofoamPrice
     {
         public const int T50 = 0;
         public const int T75 = 1;
@@ -81,37 +81,37 @@ namespace _1313.RepairTable
 
         public static int[] SideingMoney =
         {
-            14400,15100,15800,16500,17200,
+            0,14400,15100,15800,16500,17200,
             17900,18600,19600
         };
 
         public static int[] SideingMoney2 =
         {
-            16800,18100,19400,20700,22000,
+            0,16800,18100,19400,20700,22000,
             23300,24600,26400
         };
 
         public static int[] MetalMoney =
         {
-            22400,23100,23800,24500,25200,
+            0,22400,23100,23800,24500,25200,
             25900,26600,27600
         };
 
         public static int[] MetalMoney2 =
         {
-            24800,26100,27400,28700,30000,
+            0,24800,26100,27400,28700,30000,
             31300,32600,34400
         };
 
         public static int[] TreeMoney =
         {
-            20900,21600,22300,23000,23700,
+            0,0,20900,21600,22300,23000,23700,
             24400,25400
         };
 
         public static int[] TreeMoney2 =
         {
-           24100,25400,26700,28000,29300,
+           0,0,24100,25400,26700,28000,29300,
            30600,32400
         };
     }

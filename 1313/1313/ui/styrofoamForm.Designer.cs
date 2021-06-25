@@ -170,7 +170,6 @@ namespace _1313.ui
             this.Tree_btn.Size = new System.Drawing.Size(197, 87);
             this.Tree_btn.TabIndex = 34;
             this.Tree_btn.Text = "통나무";
-
             // 
             // styrofoamForm
             // 

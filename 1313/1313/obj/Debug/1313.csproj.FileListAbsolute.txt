@@ -20,7 +20,6 @@ C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\CxFlatUI.dll
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\MaterialSkin.dll
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\SunnyUI.Common.dll
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\SunnyUI.dll
-C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\1313.csprojAssemblyReference.cache
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.Form1.resources
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.Properties.Resources.resources
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\1313.csproj.GenerateResource.cache
@@ -36,3 +35,9 @@ C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.SideingForm.resources
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\MetroFramework.Design.dll
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\MetroFramework.dll
 C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\1313.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.Boltless250Form.resources
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.BoltlessForm.resources
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.JinxForm.resources
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.MetalForm.resources
+C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.ui.TreeForm.resources

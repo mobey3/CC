@@ -1,4 +1,8 @@
-﻿using MaterialSkin.Controls;
+﻿using _1313.model;
+using _1313.PanelTable;
+using _1313.RepairTable;
+using MaterialSkin.Controls;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,5 +21,8 @@ namespace _1313.ui
         {
             InitializeComponent();
         }
+
+       
     }
+    
 }

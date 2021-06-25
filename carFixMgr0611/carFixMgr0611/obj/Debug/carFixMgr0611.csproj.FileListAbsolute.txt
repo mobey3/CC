@@ -32,3 +32,4 @@ C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.Fo
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.HistoryForm.resources
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\CC\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.ui.ReceiptView.resources

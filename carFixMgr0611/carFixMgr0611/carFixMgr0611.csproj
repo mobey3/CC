@@ -72,6 +72,7 @@
     <Compile Include="model\Car.cs" />
     <Compile Include="model\Customer.cs" />
     <Compile Include="model\Receipt.cs" />
+    <Compile Include="model\ReceiptVO.cs" />
     <Compile Include="model\RepairItem.cs" />
     <Compile Include="model\Staff.cs" />
     <Compile Include="ui\Form1.cs">
@@ -100,6 +101,12 @@
     <Compile Include="ui\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui\ReceiptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\ReceiptView.Designer.cs">
+      <DependentUpon>ReceiptView.cs</DependentUpon>
+    </Compile>
     <Compile Include="util\RepairTable.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ui\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\ReceiptView.resx">
+      <DependentUpon>ReceiptView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

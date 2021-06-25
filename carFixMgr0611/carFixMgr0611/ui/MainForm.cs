@@ -35,19 +35,18 @@ namespace carFixMgr0611
 
         private void custFixAdd_Click(object sender, EventArgs e)
         {
-            /*new ReceiptForm(adapter).ShowDialog();
-            adapter.addReceiptDb();*/
-            ora.insertDb();
+            new ReceiptForm(adapter).ShowDialog();
+            adapter.addReceiptDb();
         }
 
         private void custFixView_Click(object sender, EventArgs e)
         {
-            new HistoryForm().ShowDialog();
+            new ReceiptView(adapter).ShowDialog();
         }
 
         private void custFixAdmin_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void custFixRand_Click(object sender, EventArgs e)

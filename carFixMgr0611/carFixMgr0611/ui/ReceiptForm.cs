@@ -135,6 +135,7 @@ namespace carFixMgr0611.ui
 
 
             // ↓ 컬렉션 클래스 <제네릭 or 범용데이터> 
+            int sum = 0;
             List<RepairItem> itemList = new List< RepairItem > ();
             for (int i = RepairTable.ENGINE_OIL;
                 i < RepairTable.ETC_COST + 1; i++)
@@ -145,6 +146,7 @@ namespace carFixMgr0611.ui
                     Console.WriteLine("수리비: " + RepairTable.fixMoney[i]);
                     itemList.Add(new RepairItem(i, checkBox[i].Text,
                                  RepairTable.fixMoney[i]));
+                    sum += RepairTable.fixMoney[i];
 
                 }
             }
@@ -212,7 +214,7 @@ namespace carFixMgr0611.ui
                 new Customer(name,telH+telB, custyear+custmonth+custday),
                 new Car(model,number,cc,year),
                 DateTime.Now.ToString("yyyy년MM월dd일"),
-                staffname,itemList));
+                staffname,itemList,sum));
 
            
 
@@ -226,9 +228,9 @@ namespace carFixMgr0611.ui
                 ActiveControl.Focus();
                 cont.Text = "";
             }
-        
+    
 
-        private void receiptClose_Click(object sender, EventArgs e)
+        private void receiptClose_Click_1(object sender, EventArgs e)
         {
             Close();
         }
