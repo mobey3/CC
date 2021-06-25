@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class BoltlessForm
+    partial class S_BoltlessForm
     {
         /// <summary>
         /// Required designer variable.
@@ -384,7 +384,7 @@ namespace _1313.ui
             this.uiSymbolLabel1.TabIndex = 76;
             this.uiSymbolLabel1.Text = "기본색상(아이보리,은회색,청색)";
             // 
-            // BoltlessForm
+            // S_BoltlessForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -415,8 +415,8 @@ namespace _1313.ui
             this.Controls.Add(this.B_Length);
             this.Controls.Add(this.B_thickness);
             this.Controls.Add(this.B_Color);
-            this.Name = "BoltlessForm";
-            this.Text = "BoltlessForm";
+            this.Name = "S_BoltlessForm";
+            this.Text = "S_BoltlessForm";
             this.ResumeLayout(false);
 
         }

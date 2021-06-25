@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class SideingForm
+    partial class S_SideingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -148,6 +148,7 @@ namespace _1313.ui
             this.S_C_btn.Size = new System.Drawing.Size(223, 51);
             this.S_C_btn.TabIndex = 140;
             this.S_C_btn.Text = "뒤로가기";
+            this.S_C_btn.Click += new System.EventHandler(this.S_C_btn_Click);
             // 
             // S_S_btn
             // 
@@ -369,7 +370,7 @@ namespace _1313.ui
             this.uiSymbolLabel1.TabIndex = 148;
             this.uiSymbolLabel1.Text = "기본색상(아이보리,은회색,청색)";
             // 
-            // SideingForm
+            // S_SideingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -399,8 +400,8 @@ namespace _1313.ui
             this.Controls.Add(this.S_Length);
             this.Controls.Add(this.S_thickness);
             this.Controls.Add(this.S_Color);
-            this.Name = "SideingForm";
-            this.Text = "SideingForm";
+            this.Name = "S_SideingForm";
+            this.Text = "S_SideingForm";
             this.ResumeLayout(false);
 
         }

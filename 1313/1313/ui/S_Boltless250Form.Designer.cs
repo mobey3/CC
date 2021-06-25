@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class Boltless250Form
+    partial class S_Boltless250Form
     {
         /// <summary>
         /// Required designer variable.
@@ -149,6 +149,7 @@ namespace _1313.ui
             this.B250_C_btn.Size = new System.Drawing.Size(223, 51);
             this.B250_C_btn.TabIndex = 92;
             this.B250_C_btn.Text = "뒤로가기";
+            this.B250_C_btn.Click += new System.EventHandler(this.B250_C_btn_Click);
             // 
             // B250_S_btn
             // 
@@ -383,7 +384,7 @@ namespace _1313.ui
             this.uiSymbolLabel1.TabIndex = 100;
             this.uiSymbolLabel1.Text = "기본색상(아이보리,은회색,청색)";
             // 
-            // Boltless250Form
+            // S_Boltless250Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -414,8 +415,8 @@ namespace _1313.ui
             this.Controls.Add(this.B250_Length);
             this.Controls.Add(this.B250_thickness);
             this.Controls.Add(this.B250_Color);
-            this.Name = "Boltless250Form";
-            this.Text = "Boltless250Form";
+            this.Name = "S_Boltless250Form";
+            this.Text = "S_Boltless250Form";
             this.ResumeLayout(false);
 
         }

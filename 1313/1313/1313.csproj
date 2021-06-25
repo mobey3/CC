@@ -77,53 +77,53 @@
     <Compile Include="PanelTable\ColorPrice.cs" />
     <Compile Include="PanelTable\GlasswoolPrice.cs" />
     <Compile Include="PanelTable\StyrofoamPrice.cs" />
-    <Compile Include="ui\Boltless250Form.cs">
+    <Compile Include="ui\S_Boltless250Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\Boltless250Form.Designer.cs">
-      <DependentUpon>Boltless250Form.cs</DependentUpon>
+    <Compile Include="ui\S_Boltless250Form.Designer.cs">
+      <DependentUpon>S_Boltless250Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\BoltlessForm.cs">
+    <Compile Include="ui\S_BoltlessForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\BoltlessForm.Designer.cs">
-      <DependentUpon>BoltlessForm.cs</DependentUpon>
+    <Compile Include="ui\S_BoltlessForm.Designer.cs">
+      <DependentUpon>S_BoltlessForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\JinxForm.cs">
+    <Compile Include="ui\S_JinxForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\JinxForm.Designer.cs">
-      <DependentUpon>JinxForm.cs</DependentUpon>
+    <Compile Include="ui\S_JinxForm.Designer.cs">
+      <DependentUpon>S_JinxForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\MetalForm.cs">
+    <Compile Include="ui\S_MetalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\MetalForm.Designer.cs">
-      <DependentUpon>MetalForm.cs</DependentUpon>
+    <Compile Include="ui\S_MetalForm.Designer.cs">
+      <DependentUpon>S_MetalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\RoofForm.cs">
+    <Compile Include="ui\S_RoofForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\RoofForm.Designer.cs">
-      <DependentUpon>RoofForm.cs</DependentUpon>
+    <Compile Include="ui\S_RoofForm.Designer.cs">
+      <DependentUpon>S_RoofForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\SideingForm.cs">
+    <Compile Include="ui\S_SideingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\SideingForm.Designer.cs">
-      <DependentUpon>SideingForm.cs</DependentUpon>
+    <Compile Include="ui\S_SideingForm.Designer.cs">
+      <DependentUpon>S_SideingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\TreeForm.cs">
+    <Compile Include="ui\S_TreeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\TreeForm.Designer.cs">
-      <DependentUpon>TreeForm.cs</DependentUpon>
+    <Compile Include="ui\S_TreeForm.Designer.cs">
+      <DependentUpon>S_TreeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\WallForm.cs">
+    <Compile Include="ui\S_WallForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\WallForm.Designer.cs">
-      <DependentUpon>WallForm.cs</DependentUpon>
+    <Compile Include="ui\S_WallForm.Designer.cs">
+      <DependentUpon>S_WallForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ui\MainForm.cs">
       <SubType>Form</SubType>
@@ -148,14 +148,14 @@
     <Compile Include="ui\WoolForm.Designer.cs">
       <DependentUpon>WoolForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ui\Boltless250Form.resx">
-      <DependentUpon>Boltless250Form.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_Boltless250Form.resx">
+      <DependentUpon>S_Boltless250Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\BoltlessForm.resx">
-      <DependentUpon>BoltlessForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_BoltlessForm.resx">
+      <DependentUpon>S_BoltlessForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\JinxForm.resx">
-      <DependentUpon>JinxForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_JinxForm.resx">
+      <DependentUpon>S_JinxForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -169,23 +169,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ui\MetalForm.resx">
-      <DependentUpon>MetalForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_MetalForm.resx">
+      <DependentUpon>S_MetalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\RoofForm.resx">
-      <DependentUpon>RoofForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_RoofForm.resx">
+      <DependentUpon>S_RoofForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\SideingForm.resx">
-      <DependentUpon>SideingForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_SideingForm.resx">
+      <DependentUpon>S_SideingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\styrofoamForm.resx">
       <DependentUpon>styrofoamForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\TreeForm.resx">
-      <DependentUpon>TreeForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_TreeForm.resx">
+      <DependentUpon>S_TreeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ui\WallForm.resx">
-      <DependentUpon>WallForm.cs</DependentUpon>
+    <EmbeddedResource Include="ui\S_WallForm.resx">
+      <DependentUpon>S_WallForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\WoolForm.resx">
       <DependentUpon>WoolForm.cs</DependentUpon>

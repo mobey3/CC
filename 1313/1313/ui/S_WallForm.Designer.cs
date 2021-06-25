@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class WallForm
+    partial class S_WallForm
     {
         /// <summary>
         /// Required designer variable.
@@ -384,7 +384,7 @@ namespace _1313.ui
             this.uiSymbolLabel2.TabIndex = 57;
             this.uiSymbolLabel2.Text = "단위: M";
             // 
-            // WallForm
+            // S_WallForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -415,8 +415,8 @@ namespace _1313.ui
             this.Controls.Add(this.W_Length);
             this.Controls.Add(this.W_thickness);
             this.Controls.Add(this.W_Color);
-            this.Name = "WallForm";
-            this.Text = "WallForm";
+            this.Name = "S_WallForm";
+            this.Text = "S_WallForm";
             this.ResumeLayout(false);
 
         }

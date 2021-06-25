@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class MetalForm
+    partial class S_MetalForm
     {
         /// <summary>
         /// Required designer variable.
@@ -148,6 +148,7 @@ namespace _1313.ui
             this.M_C_btn.Size = new System.Drawing.Size(223, 51);
             this.M_C_btn.TabIndex = 116;
             this.M_C_btn.Text = "뒤로가기";
+            this.M_C_btn.Click += new System.EventHandler(this.M_C_btn_Click);
             // 
             // M_S_btn
             // 
@@ -159,6 +160,7 @@ namespace _1313.ui
             this.M_S_btn.Size = new System.Drawing.Size(223, 51);
             this.M_S_btn.TabIndex = 115;
             this.M_S_btn.Text = "추가";
+            this.M_S_btn.Click += new System.EventHandler(this.M_S_btn_Click);
             // 
             // M_L_Text
             // 
@@ -368,7 +370,7 @@ namespace _1313.ui
             this.uiSymbolLabel1.TabIndex = 124;
             this.uiSymbolLabel1.Text = "기본색상(아이보리,은회색,청색)";
             // 
-            // MetalForm
+            // S_MetalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -398,8 +400,8 @@ namespace _1313.ui
             this.Controls.Add(this.M_Length);
             this.Controls.Add(this.M_thickness);
             this.Controls.Add(this.M_Color);
-            this.Name = "MetalForm";
-            this.Text = "MetalForm";
+            this.Name = "S_MetalForm";
+            this.Text = "S_MetalForm";
             this.ResumeLayout(false);
 
         }

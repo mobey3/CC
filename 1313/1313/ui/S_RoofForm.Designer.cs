@@ -1,7 +1,7 @@
 ﻿
 namespace _1313.ui
 {
-    partial class RoofForm
+    partial class S_RoofForm
     {
         /// <summary>
         /// Required designer variable.
@@ -149,6 +149,7 @@ namespace _1313.ui
             this.R_C_btn.Size = new System.Drawing.Size(223, 51);
             this.R_C_btn.TabIndex = 116;
             this.R_C_btn.Text = "뒤로가기";
+            this.R_C_btn.Click += new System.EventHandler(this.R_C_btn_Click);
             // 
             // R_S_btn
             // 
@@ -383,7 +384,7 @@ namespace _1313.ui
             this.uiSymbolLabel1.TabIndex = 124;
             this.uiSymbolLabel1.Text = "기본색상(아이보리,은회색,청색)";
             // 
-            // RoofForm
+            // S_RoofForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -414,8 +415,8 @@ namespace _1313.ui
             this.Controls.Add(this.R_Length);
             this.Controls.Add(this.R_thickness);
             this.Controls.Add(this.R_Color);
-            this.Name = "RoofForm";
-            this.Text = "RoofForm";
+            this.Name = "S_RoofForm";
+            this.Text = "S_RoofForm";
             this.ResumeLayout(false);
 
         }

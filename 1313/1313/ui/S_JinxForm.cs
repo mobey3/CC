@@ -15,32 +15,32 @@ using System.Windows.Forms;
 
 namespace _1313.ui
 {
-    public partial class BoltlessForm : MaterialForm
+    public partial class S_JinxForm : MaterialForm
     {
-        public BoltlessForm()
+        public S_JinxForm()
         {
             InitializeComponent();
         }
 
-        private void B_S_btn_Click(object sender, EventArgs e)
+        private void J_S_btn_Click(object sender, EventArgs e)
         {
             UICheckBox[] checkBox1 = new UICheckBox[]
-            {
-                B_T_chk1, B_T_chk2, B_T_chk3, B_T_chk4, B_T_chk5,
-                B_T_chk6, B_T_chk7, B_T_chk8, B_T_chk9
-            };
+           {
+                J_T_chk1, J_T_chk2, J_T_chk3, J_T_chk4, J_T_chk5,
+                J_T_chk6, J_T_chk7, J_T_chk8, J_T_chk9
+           };
 
             UICheckBox[] checkBox2 = new UICheckBox[]
             {
-                B_C_chk1 , B_C_chk2
+                J_C_chk1 , J_C_chk2
             };
 
             UICheckBox[] checkBox3 = new UICheckBox[]
             {
-                B_D_chk1 , B_D_chk2
+                J_D_chk1 , J_D_chk2
             };
 
-            string Leg = B_L_Text.Text;
+            string Leg = J_L_Text.Text;
 
             int sum = 0;
             int st = 0;
@@ -55,24 +55,24 @@ namespace _1313.ui
                         if (checkBox1[i].Checked)
                         {
                             Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.BoltlessMoney[i]);
-                            itemList.Add(new PriceItem(i, StyrofoamPrice.BoltlessMoney[i]));
-                            st = StyrofoamPrice.BoltlessMoney[i];
+                            Console.WriteLine("비용:" + StyrofoamPrice.JinxMoney[i]);
+                            itemList.Add(new PriceItem(i, StyrofoamPrice.JinxMoney[i]));
+                            st = StyrofoamPrice.JinxMoney[i];
                             break;
                         }
                         break;
                     }
                 }
-                if (checkBox3[1].Checked)
+                if(checkBox3[1].Checked)
                 {
                     for (int i = StyrofoamPrice.T50; i < StyrofoamPrice.T260 + 1; i++)
                     {
                         if (checkBox1[i].Checked)
                         {
                             Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.BoltlessMoney2[i]);
-                            itemList.Add(new PriceItem(i, StyrofoamPrice.BoltlessMoney2[i]));
-                            st = StyrofoamPrice.BoltlessMoney2[i];
+                            Console.WriteLine("비용:" + StyrofoamPrice.JinxMoney2[i]);
+                            itemList.Add(new PriceItem(i, StyrofoamPrice.JinxMoney2[i]));
+                            st = StyrofoamPrice.JinxMoney2[i];
                             break;
                         }
                     }
@@ -94,13 +94,14 @@ namespace _1313.ui
             }
             Console.WriteLine(co);
 
-            sum = ((st + co) * Convert.ToInt32(B_L_Text.Text));
+            sum = ((st + co) * Convert.ToInt32(J_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
         }
 
-        private void B_C_btn_Click(object sender, EventArgs e)
+        private void J_C_btn_Click(object sender, EventArgs e)
         {
             Close();
         }
     }
+    
 }

@@ -15,39 +15,39 @@ using System.Windows.Forms;
 
 namespace _1313.ui
 {
-    public partial class WallForm : MaterialForm
+    public partial class S_Boltless250Form : MaterialForm
     {
-        public WallForm()
+        public S_Boltless250Form()
         {
             InitializeComponent();
         }
 
-        private void W_S_btn_Click(object sender, EventArgs e)
+        private void B250_S_btn_Click(object sender, EventArgs e)
         {
             UICheckBox[] checkBox1 = new UICheckBox[]
-            {
-                W_T_chk1, W_T_chk2, W_T_chk3, W_T_chk4, W_T_chk5,
-                W_T_chk6, W_T_chk7, W_T_chk8, W_T_chk9
-            };
+           {
+                B250_T_chk1, B250_T_chk2, B250_T_chk3, B250_T_chk4, B250_T_chk5,
+                B250_T_chk6, B250_T_chk7, B250_T_chk8, B250_T_chk9
+           };
 
             UICheckBox[] checkBox2 = new UICheckBox[]
             {
-                W_C_chk1 , W_C_chk2
+                B250_C_chk1 , B250_C_chk2
             };
 
             UICheckBox[] checkBox3 = new UICheckBox[]
             {
-                W_D_chk1 , W_D_chk2
+                B250_D_chk1 , B250_D_chk2
             };
 
-            string Leg = W_L_Text.Text;
+            string Leg = B250_L_Text.Text;
 
             int sum = 0;
             int st = 0;
             int co = 0;
 
             List<PriceItem> itemList = new List<PriceItem>();
-            
+          
                 if (checkBox3[0].Checked)
                 {
                     for (int i = StyrofoamPrice.T50; i < StyrofoamPrice.T260 + 1; i++)
@@ -55,24 +55,25 @@ namespace _1313.ui
                         if (checkBox1[i].Checked)
                         {
                             Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.WallMoney[i]);
-                            itemList.Add(new PriceItem(i, StyrofoamPrice.WallMoney[i]));
-                            st = StyrofoamPrice.WallMoney[i];
+                            Console.WriteLine("비용:" + StyrofoamPrice.Boltless250Money[i]);
+                            itemList.Add(new PriceItem(i, StyrofoamPrice.Boltless250Money[i]));
+                            st = StyrofoamPrice.Boltless250Money[i];
                             break;
                         }
+                        break;
                     }
                 }
-           
-                if(checkBox3[1].Checked)
+
+                if (checkBox3[1].Checked)
                 {
                     for (int i = StyrofoamPrice.T50; i < StyrofoamPrice.T260 + 1; i++)
                     {
                         if (checkBox1[i].Checked)
                         {
                             Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.WallMoney2[i]);
-                            itemList.Add(new PriceItem(i, StyrofoamPrice.WallMoney2[i]));
-                            st = StyrofoamPrice.WallMoney2[i];
+                            Console.WriteLine("비용:" + StyrofoamPrice.BoltlessMoney2[i]);
+                            itemList.Add(new PriceItem(i, StyrofoamPrice.BoltlessMoney2[i]));
+                            st = StyrofoamPrice.BoltlessMoney2[i];
                             break;
                         }
                     }
@@ -81,7 +82,7 @@ namespace _1313.ui
 
             List<PriceItem> itemList2 = new List<PriceItem>();
 
-            for (int j = 0;j < 2; j++)
+            for (int j = 0; j < 2; j++)
             {
                 if (checkBox2[j].Checked)
                 {
@@ -94,14 +95,14 @@ namespace _1313.ui
             }
             Console.WriteLine(co);
 
-            sum = ((st + co) * Convert.ToInt32(W_L_Text.Text));
+            sum = ((st + co) * Convert.ToInt32(B250_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
-
         }
 
-        private void W_C_btn_Click(object sender, EventArgs e)
+        private void B250_C_btn_Click(object sender, EventArgs e)
         {
             Close();
         }
     }
+    
 }
