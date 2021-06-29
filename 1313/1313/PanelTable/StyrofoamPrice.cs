@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1313.RepairTable
+namespace _1313.PanelTable
 {
     class StyrofoamPrice
     {

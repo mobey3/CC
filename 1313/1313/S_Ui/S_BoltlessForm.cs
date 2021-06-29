@@ -1,6 +1,5 @@
 ﻿using _1313.model;
 using _1313.PanelTable;
-using _1313.RepairTable;
 using MaterialSkin.Controls;
 using Sunny.UI;
 using System;
@@ -60,10 +59,10 @@ namespace _1313.ui
                             st = StyrofoamPrice.BoltlessMoney[i];
                             break;
                         }
-                        break;
+                        
                     }
                 }
-                if (checkBox3[1].Checked)
+                else
                 {
                     for (int i = StyrofoamPrice.T50; i < StyrofoamPrice.T260 + 1; i++)
                     {

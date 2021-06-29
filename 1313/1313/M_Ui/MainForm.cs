@@ -24,12 +24,17 @@ namespace _1313
 
         private void Sty_Estimate_Click(object sender, EventArgs e)
         {
-            new styrofoamForm().ShowDialog();
-        }
+            string pk = P_K_text.SelectedText;
 
-        private void Wool_Estimate_Click(object sender, EventArgs e)
-        {
-            new WoolForm().ShowDialog();
+            if(pk == "스티로폼")
+            {
+                new styrofoamForm().ShowDialog();
+            }
+            else
+            {
+                new WoolForm().ShowDialog();
+            }
+
         }
     }
 }

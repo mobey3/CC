@@ -13,7 +13,7 @@ namespace _1313.PanelTable
         public const int T100 = 2;
         public const int T125 = 3;
         public const int T150 = 4;
-        public const int T175 = 5;
+        public const int T180 = 5;
         public const int T200 = 6;
         public const int T220 = 7;
 
@@ -50,42 +50,42 @@ namespace _1313.PanelTable
         };
         public static int[] V8048Money =
         {
-           21300,23100,24900,26700,28900,
+           0,21300,23100,24900,26700,28900,
            30300,31800
         };
         public static int[] V8064Money =
         {
-          23100,25500,27900,30300,33200,
+          0,23100,25500,27900,30300,33200,
           35100,37100
         };
         public static int[] Metal48Money =
         {
-           27900,29700,31500,33300,35500,
+           0,27900,29700,31500,33300,35500,
            36900,38400
         };
         public static int[] Metal64Money =
         {
-           29700,32100,34500,36900,39800,
+           0,29700,32100,34500,36900,39800,
            41700,43700
         };
         public static int[] Jinx48Money =
         {
-           26100,27900,29700,31500,33700,
+           0,26100,27900,29700,31500,33700,
            35100,36600
         };
         public static int[] Jinx64Money =
         {
-          27900,30300,32700,35100,38000,
+          0,27900,30300,32700,35100,38000,
           39900,41900
         };
         public static int[] Side48Money =
         {
-           20900,22700,24500,26300,28500,
+           0,20900,22700,24500,26300,28500,
            29900,31400
         };
         public static int[] Side64Money =
         {
-          22700,25100,27500,29900,32800,
+          0,22700,25100,27500,29900,32800,
           34700,36700
         };
     }

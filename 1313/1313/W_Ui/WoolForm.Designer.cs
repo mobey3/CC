@@ -52,6 +52,7 @@ namespace _1313.ui
             this.G_V80_btn.Size = new System.Drawing.Size(197, 87);
             this.G_V80_btn.TabIndex = 43;
             this.G_V80_btn.Text = "V-80";
+            this.G_V80_btn.Click += new System.EventHandler(this.G_V80_btn_Click);
             // 
             // G_Metal_btn
             // 
@@ -66,6 +67,7 @@ namespace _1313.ui
             this.G_Metal_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Metal_btn.TabIndex = 42;
             this.G_Metal_btn.Text = "라인메탈";
+            this.G_Metal_btn.Click += new System.EventHandler(this.G_Metal_btn_Click);
             // 
             // uiSymbolLabel1
             // 
@@ -74,10 +76,12 @@ namespace _1313.ui
             this.uiSymbolLabel1.Location = new System.Drawing.Point(181, 62);
             this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel1.Name = "uiSymbolLabel1";
-            this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
             this.uiSymbolLabel1.Size = new System.Drawing.Size(568, 107);
+            this.uiSymbolLabel1.Symbol = 61920;
+            this.uiSymbolLabel1.SymbolSize = 50;
             this.uiSymbolLabel1.TabIndex = 41;
-            this.uiSymbolLabel1.Text = "종류";
+            this.uiSymbolLabel1.Text = "종     류";
             // 
             // G_Sideing_btn
             // 
@@ -92,6 +96,7 @@ namespace _1313.ui
             this.G_Sideing_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Sideing_btn.TabIndex = 40;
             this.G_Sideing_btn.Text = "싸이딩";
+            this.G_Sideing_btn.Click += new System.EventHandler(this.G_Sideing_btn_Click);
             // 
             // G_Roof_btn
             // 
@@ -106,6 +111,7 @@ namespace _1313.ui
             this.G_Roof_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Roof_btn.TabIndex = 39;
             this.G_Roof_btn.Text = "지붕";
+            this.G_Roof_btn.Click += new System.EventHandler(this.G_Roof_btn_Click);
             // 
             // G_Jinx_btn
             // 
@@ -120,6 +126,7 @@ namespace _1313.ui
             this.G_Jinx_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Jinx_btn.TabIndex = 38;
             this.G_Jinx_btn.Text = "징크";
+            this.G_Jinx_btn.Click += new System.EventHandler(this.G_Jinx_btn_Click);
             // 
             // G_Boltless250_btn
             // 
@@ -134,6 +141,7 @@ namespace _1313.ui
             this.G_Boltless250_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Boltless250_btn.TabIndex = 36;
             this.G_Boltless250_btn.Text = "볼트리스250";
+            this.G_Boltless250_btn.Click += new System.EventHandler(this.G_Boltless250_btn_Click);
             // 
             // G_Wall_btn
             // 
@@ -148,6 +156,7 @@ namespace _1313.ui
             this.G_Wall_btn.Size = new System.Drawing.Size(197, 87);
             this.G_Wall_btn.TabIndex = 35;
             this.G_Wall_btn.Text = "벽체";
+            this.G_Wall_btn.Click += new System.EventHandler(this.G_Wall_btn_Click);
             // 
             // WoolForm
             // 

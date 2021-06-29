@@ -1,6 +1,5 @@
 ﻿using _1313.model;
 using _1313.PanelTable;
-using _1313.RepairTable;
 using MaterialSkin.Controls;
 using Sunny.UI;
 using System;
@@ -13,34 +12,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _1313.ui
+namespace _1313.W_Ui
 {
-    public partial class S_TreeForm : MaterialForm
+    public partial class W_RoofForm : MaterialForm
     {
-        public S_TreeForm()
+        public W_RoofForm()
         {
             InitializeComponent();
         }
 
-        private void T_S_btn_Click(object sender, EventArgs e)
+        private void R_S_btn_Click(object sender, EventArgs e)
         {
             UICheckBox[] checkBox1 = new UICheckBox[]
-          {
-                T_T_chk1, T_T_chk2, T_T_chk3, T_T_chk4,
-                T_T_chk5, T_T_chk6, T_T_chk7 
-          };
+           {
+                R_T_chk1, R_T_chk2, R_T_chk3, R_T_chk4, R_T_chk5,
+                R_T_chk6, R_T_chk7, R_T_chk8
+           };
 
             UICheckBox[] checkBox2 = new UICheckBox[]
             {
-                T_C_chk1 , T_C_chk2
+                R_C_chk1 , R_C_chk2
             };
 
             UICheckBox[] checkBox3 = new UICheckBox[]
             {
-                M_D_chk1 , M_D_chk2
+                R_D_chk1 , R_D_chk2
             };
 
-            string Leg = T_L_Text.Text;
+            string Leg = R_L_Text.Text;
 
             int sum = 0;
             int st = 0;
@@ -50,29 +49,29 @@ namespace _1313.ui
 
             if (checkBox3[0].Checked)
             {
-                for (int i = StyrofoamPrice.T75; i < StyrofoamPrice.T260 + 1; i++)
+                for (int i = GlasswoolPrice.T50; i < GlasswoolPrice.T220 + 1; i++)
                 {
                     if (checkBox1[i].Checked)
                     {
                         Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                        Console.WriteLine("비용:" + StyrofoamPrice.TreeMoney[i]);
-                        itemList.Add(new PriceItem(i, StyrofoamPrice.TreeMoney[i]));
-                        st = StyrofoamPrice.TreeMoney[i];
+                        Console.WriteLine("비용:" + GlasswoolPrice.Roof48Money[i]);
+                        itemList.Add(new PriceItem(i, GlasswoolPrice.Roof48Money[i]));
+                        st = GlasswoolPrice.Roof48Money[i];
                         break;
                     }
-                    break;
                 }
             }
-            if (checkBox3[1].Checked)
+
+            else
             {
-                for (int i = StyrofoamPrice.T75; i < StyrofoamPrice.T260 + 1; i++)
+                for (int i = GlasswoolPrice.T50; i < GlasswoolPrice.T220 + 1; i++)
                 {
                     if (checkBox1[i].Checked)
                     {
                         Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                        Console.WriteLine("비용:" + StyrofoamPrice.TreeMoney2[i]);
-                        itemList.Add(new PriceItem(i, StyrofoamPrice.TreeMoney2[i]));
-                        st = StyrofoamPrice.TreeMoney2[i];
+                        Console.WriteLine("비용:" + GlasswoolPrice.Roof64Money[i]);
+                        itemList.Add(new PriceItem(i, GlasswoolPrice.Roof64Money[i]));
+                        st = GlasswoolPrice.Roof64Money[i];
                         break;
                     }
                 }
@@ -94,11 +93,11 @@ namespace _1313.ui
             }
             Console.WriteLine(co);
 
-            sum = ((st + co) * Convert.ToInt32(T_L_Text.Text));
+            sum = ((st + co) * Convert.ToInt32(R_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
         }
 
-        private void T_C_btn_Click(object sender, EventArgs e)
+        private void R_C_btn_Click(object sender, EventArgs e)
         {
             Close();
         }
