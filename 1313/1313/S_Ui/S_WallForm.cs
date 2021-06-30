@@ -7,16 +7,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace _1313.ui
 {
     public partial class S_WallForm : MaterialForm
     {
-        
         public S_WallForm()
         {
             InitializeComponent();
@@ -26,9 +27,22 @@ namespace _1313.ui
         {
             string com = C_text.SelectedText;
             string ki = "벽체";
-            string di; 
-            
-            
+            string di;
+
+            System.Data.DataTable dt = new System.Data.DataTable();
+            dt.Columns.Add("회사명");
+            dt.Columns.Add("종류");
+            dt.Columns.Add("구분");
+            dt.Columns.Add("두께");
+            dt.Columns.Add("색상");
+            dt.Columns.Add("총견적");
+
+            DataRow dr = dt.NewRow();
+           
+
+
+            dr["회사명"] = C_text;
+            dr["종류"] = ki;
 
             UICheckBox[] checkBox1 = new UICheckBox[]
             {
@@ -62,12 +76,14 @@ namespace _1313.ui
                             Console.WriteLine("구매항목:" + checkBox1[i].Text);
                             Console.WriteLine("비용:" + StyrofoamPrice.WallMoney[i]);
                             itemList.Add(new PriceItem(checkBox1[i].Text));
-                            Console.WriteLine(itemList[i]);
                             st = StyrofoamPrice.WallMoney[i];
+                            dr["두께"] = checkBox1[i].Text;
                             break;
                         }
                     }
+                
                 di = checkBox3[0].Text;
+                dr["구분"] = di;
                 }
            
                 else
@@ -80,10 +96,12 @@ namespace _1313.ui
                             Console.WriteLine("비용:" + StyrofoamPrice.WallMoney2[i]);
                             itemList.Add(new PriceItem(checkBox1[i].Text));
                             st = StyrofoamPrice.WallMoney2[i];
+                            dr["두께"] = checkBox1[i].Text;
                             break;
                         }
                     }
                     di = checkBox3[1].Text;
+                    dr["구분"] = di;
                 }
             
 
@@ -97,21 +115,22 @@ namespace _1313.ui
                     Console.WriteLine("추가비용:" + ColorPrice.ColorMoney[j]);
                     itemList2.Add(new PriceItem(checkBox2[j].Text));
                     co = ColorPrice.ColorMoney[j];
-                    Console.WriteLine(itemList2[j]);
+                    dr["색상"] = checkBox2[j].Text;
                     break;
                 }
             }
 
-           
-            
-
-            Console.WriteLine(co);
-
             sum = ((st + co) * Convert.ToInt32(W_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
+            dr["총견적"] = sum;
 
-            Styrofoam sty = new Styrofoam(com, ki, di, itemList, itemList2, sum);
+            ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
 
+            dt.Rows.Add(dr);
+            SatExportToExcel(dt);
+            /*StreamWriter panel = File.AppendText(@"C:\Users\KB\Desktop\data.csv");
+            panel.WriteLine("@{1},{2}");
+            panel.Close();*/
         }
 
         private void W_C_btn_Click(object sender, EventArgs e)

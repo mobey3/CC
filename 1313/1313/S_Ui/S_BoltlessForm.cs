@@ -23,6 +23,9 @@ namespace _1313.ui
 
         private void B_S_btn_Click(object sender, EventArgs e)
         {
+            string com = C_text.SelectedText;
+            string ki = "볼트리스";
+            string di;
             UICheckBox[] checkBox1 = new UICheckBox[]
             {
                 B_T_chk1, B_T_chk2, B_T_chk3, B_T_chk4, B_T_chk5,
@@ -58,9 +61,9 @@ namespace _1313.ui
                             itemList.Add(new PriceItem(i, StyrofoamPrice.BoltlessMoney[i]));
                             st = StyrofoamPrice.BoltlessMoney[i];
                             break;
-                        }
-                        
+                        }   
                     }
+                di = checkBox3[0].Text;
                 }
                 else
                 {
@@ -75,7 +78,8 @@ namespace _1313.ui
                             break;
                         }
                     }
-                }
+                di = checkBox3[1].Text;
+            }
             
 
             List<PriceItem> itemList2 = new List<PriceItem>();
@@ -95,11 +99,15 @@ namespace _1313.ui
 
             sum = ((st + co) * Convert.ToInt32(B_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
+
+            ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
         }
 
         private void B_C_btn_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+       
     }
 }

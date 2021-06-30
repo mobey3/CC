@@ -24,6 +24,9 @@ namespace _1313.ui
 
         private void R_S_btn_Click(object sender, EventArgs e)
         {
+            string com = C_text.SelectedText;
+            string ki = "지붕";
+            string di;
             UICheckBox[] checkBox1 = new UICheckBox[]
           {
                 R_T_chk1, R_T_chk2, R_T_chk3, R_T_chk4, R_T_chk5,
@@ -62,6 +65,7 @@ namespace _1313.ui
                     }
                    
                 }
+                di = checkBox3[0].Text;
             }
             else
             {
@@ -76,6 +80,7 @@ namespace _1313.ui
                         break;
                     }
                 }
+                di = checkBox3[1].Text;
             }
 
 
@@ -96,6 +101,8 @@ namespace _1313.ui
 
             sum = ((st + co) * Convert.ToInt32(R_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
+
+            ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
         }
 
         private void R_C_btn_Click(object sender, EventArgs e)

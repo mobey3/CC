@@ -54,13 +54,16 @@ namespace _1313.W_Ui
             this.W_thickness = new Sunny.UI.UISymbolLabel();
             this.W_Color = new Sunny.UI.UISymbolLabel();
             this.W_T_chk5 = new Sunny.UI.UICheckBox();
+            this.C_text = new Sunny.UI.UITextBox();
+            this.Company = new Sunny.UI.UISymbolLabel();
+            this.uiLine5 = new Sunny.UI.UILine();
             this.SuspendLayout();
             // 
             // uiSymbolLabel2
             // 
             this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel2.Location = new System.Drawing.Point(400, 493);
+            this.uiSymbolLabel2.Location = new System.Drawing.Point(435, 541);
             this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel2.Name = "uiSymbolLabel2";
             this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -73,7 +76,7 @@ namespace _1313.W_Ui
             // 
             this.uiSymbolLabel1.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel1.Location = new System.Drawing.Point(528, 404);
+            this.uiSymbolLabel1.Location = new System.Drawing.Point(563, 452);
             this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel1.Name = "uiSymbolLabel1";
             this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -86,7 +89,7 @@ namespace _1313.W_Ui
             // 
             this.uiLine4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiLine4.LineColor = System.Drawing.Color.Silver;
-            this.uiLine4.Location = new System.Drawing.Point(65, 469);
+            this.uiLine4.Location = new System.Drawing.Point(66, 517);
             this.uiLine4.MinimumSize = new System.Drawing.Size(2, 2);
             this.uiLine4.Name = "uiLine4";
             this.uiLine4.Size = new System.Drawing.Size(750, 2);
@@ -98,7 +101,7 @@ namespace _1313.W_Ui
             this.W_D_chk2.BackColor = System.Drawing.Color.Transparent;
             this.W_D_chk2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_D_chk2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_D_chk2.Location = new System.Drawing.Point(354, 132);
+            this.W_D_chk2.Location = new System.Drawing.Point(389, 219);
             this.W_D_chk2.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_D_chk2.Name = "W_D_chk2";
             this.W_D_chk2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -111,7 +114,7 @@ namespace _1313.W_Ui
             this.W_D_chk1.BackColor = System.Drawing.Color.Transparent;
             this.W_D_chk1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_D_chk1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_D_chk1.Location = new System.Drawing.Point(242, 132);
+            this.W_D_chk1.Location = new System.Drawing.Point(277, 219);
             this.W_D_chk1.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_D_chk1.Name = "W_D_chk1";
             this.W_D_chk1.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -123,7 +126,7 @@ namespace _1313.W_Ui
             // 
             this.W_division.BackColor = System.Drawing.Color.Transparent;
             this.W_division.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_division.Location = new System.Drawing.Point(31, 132);
+            this.W_division.Location = new System.Drawing.Point(66, 219);
             this.W_division.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_division.Name = "W_division";
             this.W_division.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -135,7 +138,7 @@ namespace _1313.W_Ui
             // 
             this.uiLine3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiLine3.LineColor = System.Drawing.Color.Silver;
-            this.uiLine3.Location = new System.Drawing.Point(65, 555);
+            this.uiLine3.Location = new System.Drawing.Point(66, 603);
             this.uiLine3.MinimumSize = new System.Drawing.Size(2, 2);
             this.uiLine3.Name = "uiLine3";
             this.uiLine3.Size = new System.Drawing.Size(750, 2);
@@ -146,7 +149,7 @@ namespace _1313.W_Ui
             // 
             this.uiLine2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiLine2.LineColor = System.Drawing.Color.Silver;
-            this.uiLine2.Location = new System.Drawing.Point(65, 375);
+            this.uiLine2.Location = new System.Drawing.Point(66, 423);
             this.uiLine2.MinimumSize = new System.Drawing.Size(2, 2);
             this.uiLine2.Name = "uiLine2";
             this.uiLine2.Size = new System.Drawing.Size(750, 2);
@@ -157,7 +160,7 @@ namespace _1313.W_Ui
             // 
             this.uiLine1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiLine1.LineColor = System.Drawing.Color.Silver;
-            this.uiLine1.Location = new System.Drawing.Point(65, 196);
+            this.uiLine1.Location = new System.Drawing.Point(66, 283);
             this.uiLine1.MinimumSize = new System.Drawing.Size(2, 2);
             this.uiLine1.Name = "uiLine1";
             this.uiLine1.Size = new System.Drawing.Size(750, 2);
@@ -168,7 +171,7 @@ namespace _1313.W_Ui
             // 
             this.W_C_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_C_btn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_C_btn.Location = new System.Drawing.Point(505, 589);
+            this.W_C_btn.Location = new System.Drawing.Point(506, 637);
             this.W_C_btn.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_C_btn.Name = "W_C_btn";
             this.W_C_btn.Size = new System.Drawing.Size(223, 51);
@@ -180,7 +183,7 @@ namespace _1313.W_Ui
             // 
             this.W_S_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_S_btn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_S_btn.Location = new System.Drawing.Point(150, 589);
+            this.W_S_btn.Location = new System.Drawing.Point(151, 637);
             this.W_S_btn.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_S_btn.Name = "W_S_btn";
             this.W_S_btn.Size = new System.Drawing.Size(223, 51);
@@ -193,7 +196,7 @@ namespace _1313.W_Ui
             this.W_L_Text.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.W_L_Text.FillColor = System.Drawing.Color.White;
             this.W_L_Text.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_L_Text.Location = new System.Drawing.Point(241, 493);
+            this.W_L_Text.Location = new System.Drawing.Point(276, 541);
             this.W_L_Text.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.W_L_Text.Maximum = 2147483647D;
             this.W_L_Text.Minimum = -2147483648D;
@@ -209,7 +212,7 @@ namespace _1313.W_Ui
             this.W_C_chk2.BackColor = System.Drawing.Color.Transparent;
             this.W_C_chk2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_C_chk2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_C_chk2.Location = new System.Drawing.Point(353, 404);
+            this.W_C_chk2.Location = new System.Drawing.Point(388, 452);
             this.W_C_chk2.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_C_chk2.Name = "W_C_chk2";
             this.W_C_chk2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -222,7 +225,7 @@ namespace _1313.W_Ui
             this.W_T_chk8.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk8.Location = new System.Drawing.Point(585, 302);
+            this.W_T_chk8.Location = new System.Drawing.Point(620, 374);
             this.W_T_chk8.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk8.Name = "W_T_chk8";
             this.W_T_chk8.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -235,7 +238,7 @@ namespace _1313.W_Ui
             this.W_T_chk7.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk7.Location = new System.Drawing.Point(460, 302);
+            this.W_T_chk7.Location = new System.Drawing.Point(495, 374);
             this.W_T_chk7.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk7.Name = "W_T_chk7";
             this.W_T_chk7.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -248,7 +251,7 @@ namespace _1313.W_Ui
             this.W_C_chk1.BackColor = System.Drawing.Color.Transparent;
             this.W_C_chk1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_C_chk1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_C_chk1.Location = new System.Drawing.Point(241, 404);
+            this.W_C_chk1.Location = new System.Drawing.Point(276, 452);
             this.W_C_chk1.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_C_chk1.Name = "W_C_chk1";
             this.W_C_chk1.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -261,7 +264,7 @@ namespace _1313.W_Ui
             this.W_T_chk6.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk6.Location = new System.Drawing.Point(353, 302);
+            this.W_T_chk6.Location = new System.Drawing.Point(388, 374);
             this.W_T_chk6.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk6.Name = "W_T_chk6";
             this.W_T_chk6.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -274,7 +277,7 @@ namespace _1313.W_Ui
             this.W_T_chk4.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk4.Location = new System.Drawing.Point(585, 234);
+            this.W_T_chk4.Location = new System.Drawing.Point(620, 306);
             this.W_T_chk4.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk4.Name = "W_T_chk4";
             this.W_T_chk4.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -287,7 +290,7 @@ namespace _1313.W_Ui
             this.W_T_chk3.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk3.Location = new System.Drawing.Point(460, 234);
+            this.W_T_chk3.Location = new System.Drawing.Point(495, 306);
             this.W_T_chk3.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk3.Name = "W_T_chk3";
             this.W_T_chk3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -300,7 +303,7 @@ namespace _1313.W_Ui
             this.W_T_chk2.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk2.Location = new System.Drawing.Point(353, 234);
+            this.W_T_chk2.Location = new System.Drawing.Point(388, 306);
             this.W_T_chk2.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk2.Name = "W_T_chk2";
             this.W_T_chk2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -313,7 +316,7 @@ namespace _1313.W_Ui
             this.W_T_chk1.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk1.Location = new System.Drawing.Point(241, 234);
+            this.W_T_chk1.Location = new System.Drawing.Point(276, 306);
             this.W_T_chk1.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk1.Name = "W_T_chk1";
             this.W_T_chk1.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -325,7 +328,7 @@ namespace _1313.W_Ui
             // 
             this.W_Length.BackColor = System.Drawing.Color.Transparent;
             this.W_Length.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_Length.Location = new System.Drawing.Point(31, 493);
+            this.W_Length.Location = new System.Drawing.Point(66, 541);
             this.W_Length.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_Length.Name = "W_Length";
             this.W_Length.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -337,7 +340,7 @@ namespace _1313.W_Ui
             // 
             this.W_thickness.BackColor = System.Drawing.Color.Transparent;
             this.W_thickness.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_thickness.Location = new System.Drawing.Point(31, 234);
+            this.W_thickness.Location = new System.Drawing.Point(66, 306);
             this.W_thickness.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_thickness.Name = "W_thickness";
             this.W_thickness.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -349,7 +352,7 @@ namespace _1313.W_Ui
             // 
             this.W_Color.BackColor = System.Drawing.Color.Transparent;
             this.W_Color.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_Color.Location = new System.Drawing.Point(31, 404);
+            this.W_Color.Location = new System.Drawing.Point(66, 452);
             this.W_Color.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_Color.Name = "W_Color";
             this.W_Color.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
@@ -362,7 +365,7 @@ namespace _1313.W_Ui
             this.W_T_chk5.BackColor = System.Drawing.Color.Transparent;
             this.W_T_chk5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.W_T_chk5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.W_T_chk5.Location = new System.Drawing.Point(241, 302);
+            this.W_T_chk5.Location = new System.Drawing.Point(276, 374);
             this.W_T_chk5.MinimumSize = new System.Drawing.Size(1, 1);
             this.W_T_chk5.Name = "W_T_chk5";
             this.W_T_chk5.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -370,11 +373,53 @@ namespace _1313.W_Ui
             this.W_T_chk5.TabIndex = 83;
             this.W_T_chk5.Text = "150T";
             // 
+            // C_text
+            // 
+            this.C_text.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.C_text.FillColor = System.Drawing.Color.White;
+            this.C_text.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.C_text.Location = new System.Drawing.Point(276, 126);
+            this.C_text.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.C_text.Maximum = 2147483647D;
+            this.C_text.Minimum = -2147483648D;
+            this.C_text.MinimumSize = new System.Drawing.Size(1, 1);
+            this.C_text.Name = "C_text";
+            this.C_text.Padding = new System.Windows.Forms.Padding(5);
+            this.C_text.Size = new System.Drawing.Size(143, 36);
+            this.C_text.TabIndex = 84;
+            this.C_text.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Company
+            // 
+            this.Company.BackColor = System.Drawing.Color.Transparent;
+            this.Company.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.Company.Location = new System.Drawing.Point(66, 126);
+            this.Company.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Company.Name = "Company";
+            this.Company.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.Company.Size = new System.Drawing.Size(173, 36);
+            this.Company.TabIndex = 85;
+            this.Company.Text = "회사";
+            // 
+            // uiLine5
+            // 
+            this.uiLine5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiLine5.LineColor = System.Drawing.Color.Silver;
+            this.uiLine5.Location = new System.Drawing.Point(66, 192);
+            this.uiLine5.MinimumSize = new System.Drawing.Size(2, 2);
+            this.uiLine5.Name = "uiLine5";
+            this.uiLine5.Size = new System.Drawing.Size(750, 2);
+            this.uiLine5.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine5.TabIndex = 86;
+            // 
             // W_WallForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 671);
+            this.ClientSize = new System.Drawing.Size(868, 705);
+            this.Controls.Add(this.uiLine5);
+            this.Controls.Add(this.C_text);
+            this.Controls.Add(this.Company);
             this.Controls.Add(this.W_T_chk5);
             this.Controls.Add(this.uiSymbolLabel2);
             this.Controls.Add(this.uiSymbolLabel1);
@@ -433,5 +478,8 @@ namespace _1313.W_Ui
         private Sunny.UI.UISymbolLabel W_thickness;
         private Sunny.UI.UISymbolLabel W_Color;
         private Sunny.UI.UICheckBox W_T_chk5;
+        private Sunny.UI.UITextBox C_text;
+        private Sunny.UI.UISymbolLabel Company;
+        private Sunny.UI.UILine uiLine5;
     }
 }

@@ -32,7 +32,6 @@ namespace carFixMgr0611.model
         public int TotalPrice { get => totalPrice; set => totalPrice = value; }
         internal Customer Cust { get => cust; set => cust = value; }
         internal Car Car { get => car; set => car = value; }
-        internal List<RepairItem> ItemList 
-        { get => itemList; set => itemList = value; }
+        internal List<RepairItem> ItemList { get => itemList; set => itemList = value; }
     }
 }

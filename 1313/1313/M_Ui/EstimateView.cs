@@ -14,15 +14,18 @@ namespace _1313.M_Ui
 {
     public partial class EstimateView : MaterialForm
     {
+        private List<ViewItem> list =
+            new List<ViewItem>();
         public EstimateView()
         {
             InitializeComponent();
         }
 
-        private void view_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+        
+        private void viewList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            view.Rows.Add();
+           
         }
     }
 }

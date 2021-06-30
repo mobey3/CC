@@ -23,6 +23,10 @@ namespace _1313.ui
 
         private void T_S_btn_Click(object sender, EventArgs e)
         {
+            string com = C_text.SelectedText;
+            string ki = "통나무";
+            string di;
+
             UICheckBox[] checkBox1 = new UICheckBox[]
           {
                 T_T_chk1, T_T_chk2, T_T_chk3, T_T_chk4,
@@ -59,8 +63,9 @@ namespace _1313.ui
                         st = StyrofoamPrice.TreeMoney[i];
                         break;
                     }
-                    break;
+                    
                 }
+                di = checkBox3[0].Text;
             }
             else
             {
@@ -75,6 +80,7 @@ namespace _1313.ui
                         break;
                     }
                 }
+                di = checkBox3[1].Text;
             }
 
 
@@ -95,6 +101,8 @@ namespace _1313.ui
 
             sum = ((st + co) * Convert.ToInt32(T_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
+
+            ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
         }
 
         private void T_C_btn_Click(object sender, EventArgs e)

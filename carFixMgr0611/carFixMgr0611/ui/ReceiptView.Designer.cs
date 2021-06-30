@@ -49,6 +49,7 @@ namespace carFixMgr0611.ui
             this.linDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lTotalPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lStaffName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CarNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lCustName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.vDelete = new Sunny.UI.UISymbolButton();
             this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
@@ -92,8 +93,9 @@ namespace carFixMgr0611.ui
             this.viewSelect.FillColor = System.Drawing.Color.White;
             this.viewSelect.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.viewSelect.Items.AddRange(new object[] {
-            "고객명"});
-            this.viewSelect.Location = new System.Drawing.Point(172, 97);
+            "접수고객명",
+            "접수차량번호"});
+            this.viewSelect.Location = new System.Drawing.Point(168, 99);
             this.viewSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.viewSelect.MinimumSize = new System.Drawing.Size(63, 0);
             this.viewSelect.Name = "viewSelect";
@@ -143,7 +145,7 @@ namespace carFixMgr0611.ui
             this.vSearchItem.ForeHoverColor = System.Drawing.Color.RoyalBlue;
             this.vSearchItem.ForePressColor = System.Drawing.Color.RoyalBlue;
             this.vSearchItem.ForeSelectedColor = System.Drawing.Color.RoyalBlue;
-            this.vSearchItem.Location = new System.Drawing.Point(507, 90);
+            this.vSearchItem.Location = new System.Drawing.Point(533, 90);
             this.vSearchItem.MinimumSize = new System.Drawing.Size(1, 1);
             this.vSearchItem.Name = "vSearchItem";
             this.vSearchItem.Size = new System.Drawing.Size(106, 38);
@@ -151,12 +153,13 @@ namespace carFixMgr0611.ui
             this.vSearchItem.Symbol = 61454;
             this.vSearchItem.TabIndex = 19;
             this.vSearchItem.Text = "검색";
+            this.vSearchItem.Click += new System.EventHandler(this.vSearchItem_Click);
             // 
             // viewSearch
             // 
             this.viewSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.viewSearch.Hint = "검색어을 입력하세요";
-            this.viewSearch.Location = new System.Drawing.Point(325, 90);
+            this.viewSearch.Location = new System.Drawing.Point(338, 90);
             this.viewSearch.MaxLength = 32767;
             this.viewSearch.Multiline = false;
             this.viewSearch.Name = "viewSearch";
@@ -209,7 +212,7 @@ namespace carFixMgr0611.ui
             this.viewGrid.SelectedIndex = -1;
             this.viewGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.viewGrid.ShowGridLine = true;
-            this.viewGrid.Size = new System.Drawing.Size(672, 150);
+            this.viewGrid.Size = new System.Drawing.Size(723, 150);
             this.viewGrid.TabIndex = 17;
             // 
             // gCount
@@ -234,13 +237,14 @@ namespace carFixMgr0611.ui
             this.linDate,
             this.lTotalPrice,
             this.lStaffName,
+            this.CarNum,
             this.lCustName});
             this.viewList.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.viewList.FullRowSelect = true;
             this.viewList.HideSelection = false;
             this.viewList.Location = new System.Drawing.Point(54, 134);
             this.viewList.Name = "viewList";
-            this.viewList.Size = new System.Drawing.Size(672, 163);
+            this.viewList.Size = new System.Drawing.Size(723, 163);
             this.viewList.TabIndex = 16;
             this.viewList.UseCompatibleStateImageBehavior = false;
             this.viewList.View = System.Windows.Forms.View.Details;
@@ -254,22 +258,27 @@ namespace carFixMgr0611.ui
             // linDate
             // 
             this.linDate.Text = "접수날짜";
-            this.linDate.Width = 170;
+            this.linDate.Width = 120;
             // 
             // lTotalPrice
             // 
             this.lTotalPrice.Text = "총결제금액";
-            this.lTotalPrice.Width = 170;
+            this.lTotalPrice.Width = 150;
             // 
             // lStaffName
             // 
             this.lStaffName.Text = "담당자";
-            this.lStaffName.Width = 110;
+            this.lStaffName.Width = 100;
+            // 
+            // CarNum
+            // 
+            this.CarNum.Text = "차량번호";
+            this.CarNum.Width = 100;
             // 
             // lCustName
             // 
             this.lCustName.Text = "고객명";
-            this.lCustName.Width = 110;
+            this.lCustName.Width = 100;
             // 
             // vDelete
             // 
@@ -327,7 +336,7 @@ namespace carFixMgr0611.ui
             this.vSearchAll.FillColor = System.Drawing.Color.Transparent;
             this.vSearchAll.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.vSearchAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.vSearchAll.Location = new System.Drawing.Point(620, 90);
+            this.vSearchAll.Location = new System.Drawing.Point(671, 90);
             this.vSearchAll.MinimumSize = new System.Drawing.Size(1, 1);
             this.vSearchAll.Name = "vSearchAll";
             this.vSearchAll.Size = new System.Drawing.Size(106, 38);
@@ -335,12 +344,13 @@ namespace carFixMgr0611.ui
             this.vSearchAll.Symbol = 61442;
             this.vSearchAll.TabIndex = 25;
             this.vSearchAll.Text = "전체 검색";
+            this.vSearchAll.Click += new System.EventHandler(this.vSearchAll_Click);
             // 
             // ReceiptView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 669);
+            this.ClientSize = new System.Drawing.Size(815, 669);
             this.ControlBox = false;
             this.Controls.Add(this.vSearchAll);
             this.Controls.Add(this.mainExit);
@@ -384,5 +394,6 @@ namespace carFixMgr0611.ui
         private System.Windows.Forms.DataGridViewTextBoxColumn gCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn gRepair;
         private System.Windows.Forms.DataGridViewTextBoxColumn gPrice;
+        private System.Windows.Forms.ColumnHeader CarNum;
     }
 }

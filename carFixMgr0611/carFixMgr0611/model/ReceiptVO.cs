@@ -8,10 +8,12 @@ namespace carFixMgr0611.model
 {
     class ReceiptVO
     {
-        private string indate;
-        private int totalPrice;
-        private string custName;
-        private string staffName;
+        private string indate;  // 접수일
+        private int totalPrice;  // 총결제금액
+        private string custName;  // 고객명
+        private string staffName;  // 담당자
+        private int receiptId;
+        private string carNum;
 
         public ReceiptVO(string indate, int totalPrice, string custName, string staffName)
         {
@@ -19,11 +21,20 @@ namespace carFixMgr0611.model
             this.totalPrice = totalPrice;
             this.custName = custName;
             this.staffName = staffName;
+            
+        }
+
+        public ReceiptVO(string indate, int totalPrice, string custName, string staffName, int receiptId, string carNum) : this(indate, totalPrice, custName, staffName)
+        {
+            this.receiptId = receiptId;
+            this.carNum = carNum;
         }
 
         public string Indate { get => indate; set => indate = value; }
         public int TotalPrice { get => totalPrice; set => totalPrice = value; }
         public string CustName { get => custName; set => custName = value; }
         public string StaffName { get => staffName; set => staffName = value; }
+        public int ReceiptId { get => receiptId; set => receiptId = value; }
+        public string CarNum { get => carNum; set => carNum = value; }
     }
 }

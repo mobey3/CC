@@ -29,22 +29,23 @@ namespace _1313
         /// </summary>
         private void InitializeComponent()
         {
-            this.Sty_Estimate = new Sunny.UI.UISymbolButton();
+            this.Estimate_btn = new Sunny.UI.UISymbolButton();
             this.P_K_text = new Sunny.UI.UIComboBox();
+            this.view_btn = new Sunny.UI.UISymbolButton();
             this.SuspendLayout();
             // 
-            // Sty_Estimate
+            // Estimate_btn
             // 
-            this.Sty_Estimate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Sty_Estimate.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.Sty_Estimate.Location = new System.Drawing.Point(272, 635);
-            this.Sty_Estimate.MinimumSize = new System.Drawing.Size(1, 1);
-            this.Sty_Estimate.Name = "Sty_Estimate";
-            this.Sty_Estimate.Size = new System.Drawing.Size(221, 40);
-            this.Sty_Estimate.Symbol = 61785;
-            this.Sty_Estimate.TabIndex = 5;
-            this.Sty_Estimate.Text = "견적뽑기";
-            this.Sty_Estimate.Click += new System.EventHandler(this.Sty_Estimate_Click);
+            this.Estimate_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Estimate_btn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.Estimate_btn.Location = new System.Drawing.Point(439, 157);
+            this.Estimate_btn.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Estimate_btn.Name = "Estimate_btn";
+            this.Estimate_btn.Size = new System.Drawing.Size(221, 40);
+            this.Estimate_btn.Symbol = 61785;
+            this.Estimate_btn.TabIndex = 5;
+            this.Estimate_btn.Text = "견적뽑기";
+            this.Estimate_btn.Click += new System.EventHandler(this.Sty_Estimate_Click);
             // 
             // P_K_text
             // 
@@ -53,7 +54,7 @@ namespace _1313
             this.P_K_text.Items.AddRange(new object[] {
             "스티로폼",
             "그라스울"});
-            this.P_K_text.Location = new System.Drawing.Point(272, 509);
+            this.P_K_text.Location = new System.Drawing.Point(118, 168);
             this.P_K_text.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.P_K_text.MinimumSize = new System.Drawing.Size(63, 0);
             this.P_K_text.Name = "P_K_text";
@@ -62,13 +63,27 @@ namespace _1313
             this.P_K_text.TabIndex = 6;
             this.P_K_text.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // view_btn
+            // 
+            this.view_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.view_btn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.view_btn.Location = new System.Drawing.Point(439, 307);
+            this.view_btn.MinimumSize = new System.Drawing.Size(1, 1);
+            this.view_btn.Name = "view_btn";
+            this.view_btn.Size = new System.Drawing.Size(221, 40);
+            this.view_btn.Symbol = 61785;
+            this.view_btn.TabIndex = 7;
+            this.view_btn.Text = "견적보기";
+            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 706);
+            this.Controls.Add(this.view_btn);
             this.Controls.Add(this.P_K_text);
-            this.Controls.Add(this.Sty_Estimate);
+            this.Controls.Add(this.Estimate_btn);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -76,8 +91,9 @@ namespace _1313
         }
 
         #endregion
-        private Sunny.UI.UISymbolButton Sty_Estimate;
+        private Sunny.UI.UISymbolButton Estimate_btn;
         private Sunny.UI.UIComboBox P_K_text;
+        private Sunny.UI.UISymbolButton view_btn;
     }
 }
 
