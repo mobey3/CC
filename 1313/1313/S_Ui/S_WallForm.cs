@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace _1313.ui
 {
     public partial class S_WallForm : MaterialForm
@@ -29,6 +30,7 @@ namespace _1313.ui
             string ki = "벽체";
             string di;
 
+            
             System.Data.DataTable dt = new System.Data.DataTable();
             dt.Columns.Add("회사명");
             dt.Columns.Add("종류");
@@ -126,12 +128,17 @@ namespace _1313.ui
 
             ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
 
+
             dt.Rows.Add(dr);
-            SatExportToExcel(dt);
+
+            PanelEstimate(dt);
+
             /*StreamWriter panel = File.AppendText(@"C:\Users\KB\Desktop\data.csv");
             panel.WriteLine("@{1},{2}");
             panel.Close();*/
         }
+
+       
 
         private void W_C_btn_Click(object sender, EventArgs e)
         {
