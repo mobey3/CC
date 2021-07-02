@@ -23,6 +23,10 @@ namespace _1313.ui
 
         private void M_S_btn_Click(object sender, EventArgs e)
         {
+            string com = C_text.SelectedText;
+            string ki = "메탈";
+            string di;
+
             UICheckBox[] checkBox1 = new UICheckBox[]
           {
                 M_T_chk1, M_T_chk2, M_T_chk3, M_T_chk4,
@@ -61,6 +65,7 @@ namespace _1313.ui
                     }
                   
                 }
+                di = checkBox3[0].Text;
             }
             else
             {
@@ -75,6 +80,7 @@ namespace _1313.ui
                         break;
                     }
                 }
+                di = checkBox3[1].Text;
             }
 
 
@@ -95,12 +101,16 @@ namespace _1313.ui
 
             sum = ((st + co) * Convert.ToInt32(M_L_Text.Text));
             Console.WriteLine("총 비용: " + sum);
+
+            ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
         }
 
         private void M_C_btn_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+     
     }
     
 }

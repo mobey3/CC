@@ -37,12 +37,29 @@ namespace carFixMgr0611.handler
             List<ReceiptVO> list = ora.getReceipt();
             return list;
         }
+        public List<ReceiptVO> getReceiptVoDb()
+        {
+            List<ReceiptVO> list = ora.getReceiptVO();
+            return list;
+        }
+        public List<ReceiptVO> getReceiptDbBysearch(string sratchItem,
+            string searchValue)
+        {
+            List<ReceiptVO> list = ora.getReceiptVoBySearch(sratchItem, searchValue);
+            return list;
+        }
 
         public List<RepairItem> GetRepairItemsDb(string name)
         {
-            List<RepairItem> list = ora.getRepairItem(name);
-            return list;
-            /*return ora.getRepairItem();*/
+            /*List<RepairItem> list = ora.getRepairItem(name);
+            return list;*/
+            return ora.getRepairItem(name);
+        }
+        public List<RepairItem> GetRepairItemsDb(int receiptId)
+        {
+            /*List<RepairItem> list = ora.getRepairItem(receiptId);
+            return list;*/
+            return ora.getRepairItem(receiptId);
         }
 
         public void viewReceipt()

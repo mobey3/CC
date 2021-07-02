@@ -246,6 +246,60 @@ namespace carFixMgr0611.handler
             dr.Close();
             return list;
         }
+        public List<ReceiptVO> getReceiptVO()
+        {
+            string query = 
+                "create or REPLACE view receipt_view as " +
+                "select receipt_id," +
+                "indate, " +
+                "total_price, " +
+                "(select customer_t.name from CUSTOMER_T WHERE " +
+                "CUSTOMER_T.CUST_ID = receipt_t.CUST_ID) as cust_name, " +
+                "(select staff_t.name from staff_T WHERE " +
+                "staff_T.STAFF_ID = receipt_t.STAFF_ID) as staff_name, " +
+                "(select car_t.num from car_t WHERE " +
+                "car_T.car_ID = receipt_t.cust_ID) as car_num" +
+                "from receipt_t";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+
+            string query2 = "select * from receipt_view "+
+                             "order by receipt_t desc";
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            List<ReceiptVO> list = new List<ReceiptVO>();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("접수날짜: " + dr["접수일"]);
+                    Console.WriteLine("결제금액: " + dr["총결제금액"]);
+                    Console.WriteLine("고객명: " + dr["고객명"]);
+                    Console.WriteLine("담당자: " + dr["담당자"]);
+                    Console.WriteLine("----------------------");
+                    ReceiptVO receiptVo =
+                        new ReceiptVO(dr["indata"].ToString(),
+                        Convert.ToInt32(dr["total_price"]),
+                        dr["cust_name"].ToString(),
+                        dr["staff_name"].ToString(),
+                        Convert.ToInt32(dr["rexeipt_id"].ToString()),
+                        dr["car_num"].ToString());
+                    list.Add(receiptVo);
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+            }
+
+            dr.Close();
+            return list;
+        }
 
         public List<RepairItem>getRepairItem(string name)
         { 
@@ -278,6 +332,77 @@ namespace carFixMgr0611.handler
             {
                 Console.WriteLine("데이터가 존재하지 않습니다.");
             }
+            dr.Close();
+            return list;
+        }
+        public List<RepairItem> getRepairItem(int receiptId)
+        {
+            string query2 = string.Format("select repair as 수리항목, " +
+                "price as 수리비 from REPAIR_ITEM_T " +
+                "where car_id = {0}", receiptId);
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            List<RepairItem> list = new List<RepairItem>();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    /*Console.WriteLine("번호: " + count);
+                    Console.WriteLine("수리항목: " + dr["수리항목"]);
+                    Console.WriteLine("수리비: " + dr["수리비"]);
+                    Console.WriteLine("----------------------");*/
+                    list.Add(new RepairItem(
+                        0, dr["수리항목"].ToString(),
+                        Convert.ToInt32(dr["수리비"].ToString())));
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+            }
+            dr.Close();
+            return list;
+        }
+        public List<ReceiptVO> getReceiptVoBySearch(string searchItem, string searchValue)
+        {
+            string query2 = string.Format("select * from receipt_view " +
+                             "where {0} = '{1}'",
+                             searchItem,searchValue);
+            cmd.Connection = conn;
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            List<ReceiptVO> list = new List<ReceiptVO>();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Console.WriteLine("번호: " + count);
+                    Console.WriteLine("접수날짜: " + dr["접수일"]);
+                    Console.WriteLine("결제금액: " + dr["총결제금액"]);
+                    Console.WriteLine("고객명: " + dr["고객명"]);
+                    Console.WriteLine("담당자: " + dr["담당자"]);
+                    Console.WriteLine("----------------------");
+                    ReceiptVO receiptVo =
+                        new ReceiptVO(dr["indata"].ToString(),
+                        Convert.ToInt32(dr["total_price"]),
+                        dr["cust_name"].ToString(),
+                        dr["staff_name"].ToString(),
+                        Convert.ToInt32(dr["rexeipt_id"].ToString()),
+                        dr["car_num"].ToString());
+                    list.Add(receiptVo);
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+            }
+
             dr.Close();
             return list;
         }

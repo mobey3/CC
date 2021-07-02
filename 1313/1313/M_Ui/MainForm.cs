@@ -1,4 +1,5 @@
 ﻿using _1313.conmon;
+using _1313.M_Ui;
 using _1313.ui;
 using MaterialSkin.Controls;
 using System;
@@ -35,6 +36,11 @@ namespace _1313
                 new WoolForm().ShowDialog();
             }
 
+        }
+
+        private void view_btn_Click(object sender, EventArgs e)
+        {
+            new EstimateView().ShowDialog();
         }
     }
 }

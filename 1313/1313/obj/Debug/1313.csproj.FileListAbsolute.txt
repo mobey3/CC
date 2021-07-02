@@ -49,3 +49,8 @@ C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.W_Ui.W_SideingForm.resources
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.W_Ui.W_V80Form.resources
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.W_Ui.W_WallForm.resources
 C:\Users\KB\Desktop\CC\1313\1313\obj\Debug\_1313.M_Ui.EstimateView.resources
+C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\EPPlus.dll
+C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\EPPlus.xml
+C:\Users\KB\Desktop\CC\1313\1313\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
