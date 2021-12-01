@@ -75,8 +75,8 @@ namespace _1313.ui
                     {
                         if (checkBox1[i].Checked)
                         {
-                            Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.WallMoney[i]);
+                            //Console.WriteLine("구매항목:" + checkBox1[i].Text);
+                            //Console.WriteLine("비용:" + StyrofoamPrice.WallMoney[i]);
                             itemList.Add(new PriceItem(checkBox1[i].Text));
                             st = StyrofoamPrice.WallMoney[i];
                             dr["두께"] = checkBox1[i].Text;
@@ -94,8 +94,8 @@ namespace _1313.ui
                     {
                         if (checkBox1[i].Checked)
                         {
-                            Console.WriteLine("구매항목:" + checkBox1[i].Text);
-                            Console.WriteLine("비용:" + StyrofoamPrice.WallMoney2[i]);
+                            //Console.WriteLine("구매항목:" + checkBox1[i].Text);
+                            //Console.WriteLine("비용:" + StyrofoamPrice.WallMoney2[i]);
                             itemList.Add(new PriceItem(checkBox1[i].Text));
                             st = StyrofoamPrice.WallMoney2[i];
                             dr["두께"] = checkBox1[i].Text;
@@ -113,8 +113,8 @@ namespace _1313.ui
             {
                 if (checkBox2[j].Checked)
                 {
-                    Console.WriteLine("구매항목:" + checkBox2[j].Text);
-                    Console.WriteLine("추가비용:" + ColorPrice.ColorMoney[j]);
+                    //Console.WriteLine("구매항목:" + checkBox2[j].Text);
+                    //Console.WriteLine("추가비용:" + ColorPrice.ColorMoney[j]);
                     itemList2.Add(new PriceItem(checkBox2[j].Text));
                     co = ColorPrice.ColorMoney[j];
                     dr["색상"] = checkBox2[j].Text;
@@ -123,19 +123,12 @@ namespace _1313.ui
             }
 
             sum = ((st + co) * Convert.ToInt32(W_L_Text.Text));
-            Console.WriteLine("총 비용: " + sum);
+           //Console.WriteLine("총 비용: " + sum);
             dr["총견적"] = sum;
 
             ViewItem sty = new ViewItem(com, ki, di, itemList, itemList2, sum);
 
-
-            dt.Rows.Add(dr);
-
-            PanelEstimate(dt);
-
-            /*StreamWriter panel = File.AppendText(@"C:\Users\KB\Desktop\data.csv");
-            panel.WriteLine("@{1},{2}");
-            panel.Close();*/
+            Console.WriteLine(sty);
         }
 
        

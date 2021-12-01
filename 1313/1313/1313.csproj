@@ -87,8 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conmon\Util.cs" />
-    <Compile Include="handler\EstimateAdapter.cs" />
-    <Compile Include="model\EstimateCSV.cs" />
+    <Compile Include="handler\XmlHandler.cs" />
     <Compile Include="model\PriceItem.cs" />
     <Compile Include="model\ViewItem.cs" />
     <Compile Include="M_Ui\EstimateView.cs">

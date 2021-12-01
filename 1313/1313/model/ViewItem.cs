@@ -15,6 +15,9 @@ namespace _1313.model
         private List<PriceItem> itemlist2;  // 컬러
         private int Totalprice;              // 총견적
 
+        public ViewItem()
+        {
+        }
 
         public ViewItem(string company, string kinds, string division, List<PriceItem> itemlist,
             List<PriceItem> itemlist2, int Totalprice)
